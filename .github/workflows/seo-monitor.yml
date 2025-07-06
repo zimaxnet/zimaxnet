@@ -1,0 +1,201 @@
+name: SEO & Performance Monitor
+
+on:
+  schedule:
+    # Run weekly on Mondays at 9 AM UTC
+    - cron: '0 9 * * 1'
+  workflow_dispatch: # Allow manual triggering
+
+jobs:
+  seo-audit:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        
+    - name: Install Lighthouse CI
+      run: npm install -g @lhci/cli@0.12.x
+        
+    - name: Run Lighthouse CI
+      run: |
+        lhci autorun
+      env:
+        LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
+        
+    - name: SEO Validation
+      run: |
+        echo "🔍 Running SEO validation..."
+        
+        # Check for essential SEO elements
+        if grep -q 'name="description"' index.html; then
+          echo "✅ Meta description found"
+        else
+          echo "❌ Missing meta description"
+        fi
+        
+        if grep -q 'name="keywords"' index.html; then
+          echo "✅ Meta keywords found"
+        else
+          echo "❌ Missing meta keywords"
+        fi
+        
+        if grep -q 'property="og:title"' index.html; then
+          echo "✅ Open Graph title found"
+        else
+          echo "❌ Missing Open Graph title"
+        fi
+        
+        if grep -q 'property="og:description"' index.html; then
+          echo "✅ Open Graph description found"
+        else
+          echo "❌ Missing Open Graph description"
+        fi
+        
+        if grep -q 'property="og:image"' index.html; then
+          echo "✅ Open Graph image found"
+        else
+          echo "❌ Missing Open Graph image"
+        fi
+        
+        if grep -q 'application/ld+json' index.html; then
+          echo "✅ Schema markup found"
+        else
+          echo "❌ Missing schema markup"
+        fi
+        
+        if grep -q 'rel="canonical"' index.html; then
+          echo "✅ Canonical URL found"
+        else
+          echo "❌ Missing canonical URL"
+        fi
+        
+    - name: Performance Check
+      run: |
+        echo "⚡ Checking performance metrics..."
+        
+        # Check for performance optimizations
+        if grep -q 'rel="preload"' index.html; then
+          echo "✅ Resource preloading found"
+        else
+          echo "⚠️  Consider adding resource preloading"
+        fi
+        
+        if grep -q 'rel="dns-prefetch"' index.html; then
+          echo "✅ DNS prefetch found"
+        else
+          echo "⚠️  Consider adding DNS prefetch"
+        fi
+        
+        # Check file sizes
+        HTML_SIZE=$(wc -c < index.html)
+        CSS_SIZE=$(wc -c < styles.css)
+        JS_SIZE=$(wc -c < script.js)
+        
+        echo "📊 File sizes:"
+        echo "  HTML: ${HTML_SIZE} bytes"
+        echo "  CSS: ${CSS_SIZE} bytes"
+        echo "  JS: ${JS_SIZE} bytes"
+        
+        if [ $HTML_SIZE -gt 50000 ]; then
+          echo "⚠️  HTML file is large, consider optimization"
+        fi
+        
+        if [ $CSS_SIZE -gt 100000 ]; then
+          echo "⚠️  CSS file is large, consider minification"
+        fi
+        
+        if [ $JS_SIZE -gt 100000 ]; then
+          echo "⚠️  JS file is large, consider minification"
+        fi
+        
+    - name: Accessibility Check
+      run: |
+        echo "♿ Checking accessibility..."
+        
+        # Check for accessibility features
+        if grep -q 'alt=' index.html; then
+          echo "✅ Alt attributes found"
+        else
+          echo "⚠️  Consider adding alt attributes to images"
+        fi
+        
+        if grep -q 'aria-label' index.html; then
+          echo "✅ ARIA labels found"
+        else
+          echo "⚠️  Consider adding ARIA labels"
+        fi
+        
+        if grep -q 'tabindex' index.html; then
+          echo "✅ Tab index found"
+        else
+          echo "⚠️  Consider adding tab index for keyboard navigation"
+        fi
+
+  keyword-monitoring:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        
+    - name: Install dependencies
+      run: |
+        pip install requests beautifulsoup4
+        
+    - name: Keyword Position Check
+      run: |
+        python -c "
+        import requests
+        from bs4 import BeautifulSoup
+        import time
+        
+        # Target keywords from README
+        keywords = [
+            'Azure AI customer interaction platform',
+            'multimodal AI customer system', 
+            'Azure AI Foundry customer platform',
+            'Model Context Protocol customer AI',
+            'customer-facing AI Azure infrastructure'
+        ]
+        
+        print('🔍 Checking keyword positions...')
+        
+        for keyword in keywords:
+            try:
+                # Simulate search (this is a placeholder - real implementation would use SEO APIs)
+                print(f'Checking: {keyword}')
+                time.sleep(1)  # Rate limiting
+            except Exception as e:
+                print(f'Error checking {keyword}: {e}')
+        "
+        
+    - name: Create SEO Report
+      run: |
+        echo "# SEO & Performance Report" > seo-report.md
+        echo "Generated: $(date)" >> seo-report.md
+        echo "" >> seo-report.md
+        echo "## Summary" >> seo-report.md
+        echo "- Website: https://zimax.net" >> seo-report.md
+        echo "- AIMCS Demo: https://aimcs.net" >> seo-report.md
+        echo "- Last updated: $(date)" >> seo-report.md
+        echo "" >> seo-report.md
+        echo "## Recommendations" >> seo-report.md
+        echo "1. Monitor keyword rankings weekly" >> seo-report.md
+        echo "2. Track page load performance" >> seo-report.md
+        echo "3. Monitor Core Web Vitals" >> seo-report.md
+        echo "4. Check for broken links monthly" >> seo-report.md
+        
+    - name: Upload SEO Report
+      uses: actions/upload-artifact@v4
+      with:
+        name: seo-report
+        path: seo-report.md 

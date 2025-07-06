@@ -1,0 +1,39 @@
+{
+  "name": "zimax-networks-website",
+  "version": "1.0.0",
+  "description": "Zimax Networks Limited - Azure-Native AI Solutions for Enterprise Customers",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"No tests specified\" && exit 0",
+    "build": "mkdir -p build && cp index.html styles.css script.js favicon.svg build/",
+    "deploy": "npm run build",
+    "lighthouse": "lighthouse https://zimax.net --output=json --output-path=./lighthouse-report.json",
+    "validate": "npm run validate:html && npm run validate:css && npm run validate:js",
+    "validate:html": "grep -q '<!DOCTYPE html>' index.html && echo '✅ HTML validation passed'",
+    "validate:css": "grep -q 'body {' styles.css && echo '✅ CSS validation passed'",
+    "validate:js": "grep -q 'document.addEventListener' script.js && echo '✅ JavaScript validation passed'"
+  },
+  "keywords": [
+    "azure",
+    "ai",
+    "enterprise",
+    "customer-ai",
+    "multimodal",
+    "zimax-networks",
+    "aimcs"
+  ],
+  "author": "Derek Moore <derek@zimax.net>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zimaxnet/zimaxnet.git"
+  },
+  "homepage": "https://zimax.net",
+  "devDependencies": {
+    "@lhci/cli": "^0.12.0",
+    "lighthouse": "^11.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+} 

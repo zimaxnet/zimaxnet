@@ -1,0 +1,198 @@
+name: Deploy Zimax Networks Website
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  # Test and validate the website
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        
+    - name: Install dependencies (if any)
+      run: |
+        if [ -f "package.json" ]; then
+          npm ci
+        fi
+        
+    - name: Validate HTML
+      run: |
+        # Basic HTML validation
+        if ! grep -q "<!DOCTYPE html>" index.html; then
+          echo "❌ Invalid HTML: Missing DOCTYPE"
+          exit 1
+        fi
+        if ! grep -q "<title>" index.html; then
+          echo "❌ Invalid HTML: Missing title"
+          exit 1
+        fi
+        echo "✅ HTML validation passed"
+        
+    - name: Validate CSS
+      run: |
+        # Basic CSS validation
+        if ! grep -q "body {" styles.css; then
+          echo "❌ Invalid CSS: Missing body styles"
+          exit 1
+        fi
+        echo "✅ CSS validation passed"
+        
+    - name: Validate JavaScript
+      run: |
+        # Basic JS validation
+        if ! grep -q "document.addEventListener" script.js; then
+          echo "❌ Invalid JavaScript: Missing event listener"
+          exit 1
+        fi
+        echo "✅ JavaScript validation passed"
+        
+    - name: Check favicon
+      run: |
+        if [ ! -f "favicon.svg" ]; then
+          echo "❌ Missing favicon.svg"
+          exit 1
+        fi
+        echo "✅ Favicon found"
+        
+    - name: SEO validation
+      run: |
+        # Check for essential SEO elements
+        if ! grep -q 'name="description"' index.html; then
+          echo "❌ Missing meta description"
+          exit 1
+        fi
+        if ! grep -q 'name="keywords"' index.html; then
+          echo "❌ Missing meta keywords"
+          exit 1
+        fi
+        if ! grep -q 'property="og:title"' index.html; then
+          echo "❌ Missing Open Graph title"
+          exit 1
+        fi
+        echo "✅ SEO validation passed"
+
+  # Build and prepare for deployment
+  build:
+    needs: test
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        
+    - name: Create build directory
+      run: |
+        mkdir -p build
+        cp index.html build/
+        cp styles.css build/
+        cp script.js build/
+        cp favicon.svg build/
+        
+    - name: Optimize images (if any)
+      run: |
+        if [ -d "images" ]; then
+          echo "Optimizing images..."
+          # Add image optimization here if needed
+        fi
+        
+    - name: Generate sitemap
+      run: |
+        cat > build/sitemap.xml << EOF
+        <?xml version="1.0" encoding="UTF-8"?>
+        <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+          <url>
+            <loc>https://zimax.net/</loc>
+            <lastmod>$(date -u +%Y-%m-%d)</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+          </url>
+        </urlset>
+        EOF
+        
+    - name: Generate robots.txt
+      run: |
+        cat > build/robots.txt << EOF
+        User-agent: *
+        Allow: /
+        Sitemap: https://zimax.net/sitemap.xml
+        EOF
+        
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: website-build
+        path: build/
+
+  # Deploy to Azure Static Web Apps (if configured)
+  deploy-azure:
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+    - name: Download build artifacts
+      uses: actions/download-artifact@v4
+      with:
+        name: website-build
+        path: build/
+        
+    - name: Deploy to Azure Static Web Apps
+      uses: Azure/static-web-apps-deploy@v1
+      with:
+        azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+        repo_token: ${{ secrets.GITHUB_TOKEN }}
+        action: "upload"
+        app_location: "build/"
+        skip_app_build: true
+      env:
+        AZURE_STATIC_WEB_APPS_API_TOKEN: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+
+  # Deploy to GitHub Pages (fallback)
+  deploy-github-pages:
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+    - name: Download build artifacts
+      uses: actions/download-artifact@v4
+      with:
+        name: website-build
+        path: build/
+        
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./build
+        force_orphan: true
+
+  # Notify deployment status
+  notify:
+    needs: [deploy-azure, deploy-github-pages]
+    runs-on: ubuntu-latest
+    if: always()
+    steps:
+    - name: Deployment Status
+      run: |
+        if [ "${{ needs.deploy-azure.result }}" == "success" ] || [ "${{ needs.deploy-github-pages.result }}" == "success" ]; then
+          echo "✅ Website deployed successfully!"
+          echo "🌐 Live at: https://zimax.net"
+          echo "🎯 AIMCS Demo: https://aimcs.net"
+        else
+          echo "❌ Deployment failed"
+          exit 1
+        fi 
