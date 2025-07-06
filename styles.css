@@ -1,5 +1,5 @@
-/* Zimax Networks - Azure-Native Customer AI Solutions */
-/* Homepage Styles */
+/* Zimax Networks Limited - Azure-Native AI Solutions for Enterprise Customers */
+/* Enterprise Website Styles */
 
 * {
     margin: 0;
@@ -78,6 +78,7 @@ nav {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .hero p {
@@ -110,6 +111,8 @@ nav {
 .btn-primary {
     background: linear-gradient(45deg, #667eea, #764ba2);
     color: white;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
 .btn-primary:hover {
@@ -253,6 +256,89 @@ nav {
     margin-bottom: 1rem;
 }
 
+/* Contact Section */
+.contact-section {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.contact-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.contact-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #667eea;
+}
+
+.contact-card a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+.contact-card p:last-child {
+    color: #666;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.enterprise-services {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.enterprise-services h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+    text-align: center;
+}
+
+.enterprise-services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.enterprise-services li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #eee;
+    color: #666;
+}
+
+.enterprise-services li:last-child {
+    border-bottom: none;
+}
+
+.enterprise-services strong {
+    color: #667eea;
+}
+
 /* CTA Section */
 .cta-section {
     padding: 80px 0;
@@ -322,6 +408,10 @@ footer {
     }
 
     .showcase-content {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-grid {
         grid-template-columns: 1fr;
     }
 

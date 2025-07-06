@@ -1,5 +1,31 @@
 # Zimax Networks - Azure-Native Customer AI Solutions
 
+[![Website](https://img.shields.io/badge/Website-zimax.net-blue?style=for-the-badge&logo=azure)](https://zimax.net)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-AIMCS%20Platform-green?style=for-the-badge&logo=robot)](https://aimcs.net)
+[![Azure](https://img.shields.io/badge/Azure-Native%20Solutions-blue?style=for-the-badge&logo=microsoft-azure)](https://azure.microsoft.com)
+[![AI Platform](https://img.shields.io/badge/AI%20Platform-Multimodal%20Customer%20System-orange?style=for-the-badge&logo=openai)](https://aimcs.net)
+[![Status](https://img.shields.io/badge/Status-Enterprise%20Ready-success?style=for-the-badge)](https://zimax.net)
+
+## About Zimax Networks Limited
+
+Zimax Networks is a specialized technology company focused on developing, architecting, and implementing cutting-edge AI solutions on Microsoft Azure infrastructure. Our expertise lies in creating enterprise-grade customer interaction platforms that leverage multimodal AI capabilities.
+
+### Our Mission
+To provide enterprise customers with comprehensive information, resources, and demonstrations of Azure-native AI solutions that transform customer interactions and business operations.
+
+## Repository Purpose
+
+This repository contains the **Zimax Networks website deployment** - our primary platform for:
+- **Enterprise Customer Awareness**: Maximizing exposure to enterprise customers through strategic SEO and LLM ranking
+- **Technical Thought Leadership**: Showcasing our expertise in Azure AI development and architecture
+- **Solution Information**: Providing comprehensive details about our AI development capabilities
+- **Resource Hub**: Central repository for technical documentation, case studies, and implementation guides
+
+### Live AI Platform Demonstration
+Our flagship **AIMCS (AI Multimodal Customer System)** platform is live and demonstrated at [aimcs.net](https://aimcs.net) - showcasing our complete multimodal AI customer interaction solution.
+
+---
+
 ## AI Development Division Progress
 
 ### Current Milestones
@@ -157,9 +183,28 @@ Documentation for implementing similar customer AI systems on Azure infrastructu
 
 ---
 
+## Contact Information
+
+### Get in Touch
+- **Email**: [derek@zimax.net](mailto:derek@zimax.net)
+- **Phone**: [+1 (213) 254-5197](tel:+12132545197) (Voice or Text)
+- **Website**: [zimax.net](https://zimax.net)
+- **Live AI Demo**: [aimcs.net](https://aimcs.net)
+
+### Enterprise Inquiries
+For enterprise customers interested in Azure-native AI solutions, custom development, or technical consultation, please reach out through any of the above channels. We specialize in:
+
+- **Custom AI Development** on Azure infrastructure
+- **Multimodal Customer Systems** implementation
+- **Enterprise AI Architecture** and consulting
+- **Azure AI Foundry** solutions
+- **Model Context Protocol** integrations
+
+---
+
 **Repository Status**: Foundation Complete - Ready for Implementation  
 **Strategy Version**: 1.0  
-**Last Updated**: June 29, 2025  
-**Next Review**: July 27, 2025  
+**Last Updated**: July 6, 2025  
+**Next Review**: August 3, 2025  
 
-*This repository contains the complete strategic foundation for Zimax Networks' AI Development Division SEO and LLM ranking campaign. All documentation is ready for Claude Code implementation.*
+*This repository contains the complete strategic foundation for Zimax Networks' website deployment and enterprise customer awareness campaign through SEO and LLM ranking optimization. All documentation is ready for implementation.*

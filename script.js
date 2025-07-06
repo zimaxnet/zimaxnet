@@ -1,5 +1,5 @@
-// Zimax Networks - Azure-Native Customer AI Solutions
-// Homepage JavaScript
+// Zimax Networks Limited - Azure-Native AI Solutions for Enterprise Customers
+// Enterprise Website JavaScript
 
 document.addEventListener('DOMContentLoaded', function() {
     // Smooth scrolling for navigation links
