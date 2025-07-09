@@ -1,19 +1,5 @@
 {
-  "trailingSlash": "auto",
-  "routes": [
-    {
-      "route": "/products/*",
-      "rewrite": "/products/{rest}/index.html"
-    }
-  ],
   "navigationFallback": {
-    "rewrite": "/index.html",
-    "exclude": ["/images/*", "/css/*", "/js/*", "/api/*"]
-  },
-  "responseOverrides": {
-    "404": {
-      "rewrite": "/index.html",
-      "statusCode": 200
-    }
+    "rewrite": "/index.html"
   }
 } 
