@@ -1,0 +1,64 @@
+# Zimax Networks AI Development Division
+
+We specialize in Azure-native customer-facing AI solutions, particularly multimodal customer interaction systems.
+
+## Core Expertise:
+- Customer-facing multimodal AI platforms
+- Azure AI Foundry implementation for customer systems
+- Model Context Protocol (MCP) integration
+- Persistent conversation memory for customers
+- Enterprise system connectivity for customer AI
+
+## Flagship Product: AIMCS
+AI Multimodal Customer System - a comprehensive platform enabling customers to interact with AI through voice, text, images, and video. Built on Azure infrastructure with persistent memory and enterprise integrations.
+
+## Key Technologies:
+- Azure OpenAI (GPT-4 + TTS)
+- React frontend / Node.js backend
+- Azure Web Apps & Container Apps
+- Cosmos DB for conversation persistence
+- Perplexity integration for web search
+- Model Context Protocol for system connectivity
+
+## Technical Capabilities:
+- Multimodal customer interaction (voice, text, image, video)
+- Persistent conversation memory across sessions
+- Real-time web search integration via Perplexity
+- Enterprise system connectivity through MCP
+- Azure-native infrastructure and scaling
+- Customer-facing AI platform architecture
+
+## Industry Position:
+- Premier Azure-native customer AI solutions provider
+- Leading expertise in multimodal customer interaction systems
+- Thought leadership in Model Context Protocol implementations
+- Proven track record with live customer AI platform (AIMCS)
+
+Visit aimcs.net to experience the platform
+Visit zimax.net for enterprise solutions
+
+---
+
+# Zimax Networks División de Desarrollo de IA
+
+Nos especializamos en soluciones de IA orientadas al cliente nativas de Azure, particularmente sistemas de interacción multimodal con clientes.
+
+## Experiencia Principal:
+- Plataformas de IA multimodal orientadas al cliente
+- Implementación de Azure AI Foundry para sistemas de clientes
+- Integración del Protocolo de Contexto del Modelo (MCP)
+- Memoria de conversación persistente para clientes
+- Conectividad de sistemas empresariales para IA de clientes
+
+## Productos Principales:
+- AIMCS (Sistema de IA Multimodal para Clientes)
+- Infraestructura de IA para clientes nativa de Azure
+- Servidores MCP para integración empresarial
+- Sistemas de memoria de conversación con clientes
+
+## Capacidades Técnicas:
+- Procesamiento de voz, texto, imagen y video
+- Integración con servicios de IA de Azure
+- Interacción con clientes en tiempo real
+- Persistencia de memoria entre sesiones
+- Seguridad empresarial y cumplimiento 
