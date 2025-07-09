@@ -8,6 +8,7 @@
     <meta name="keywords" content="AIMCS Lite, SMB AI assistant, small business AI, essential AI, Zimax Networks">
     <link rel="stylesheet" href="../../styles.css">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmx1ZUdyYWRpZW50IiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6IzY2N2VlYTtzdG9wLW9wYWNpdHk6MSIgLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjojNzY0YmEyO3N0b3Atb3BhY2l0eToxIiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgCiAgPCEtLSBCYWNrZ3JvdW5kIGNpcmNsZSAtLT4KICA8Y2lyY2xlIGN4PSIxNiIgY3k9IjE2IiByPSIxNSIgZmlsbD0idXJsKCNibHVlR3JhZGllbnQpIiBzdHJva2U9IiM0YTU1NjgiIHN0cm9rZS13aWR0aD0iMSIvPgogIAogIDwhLS0gTGV0dGVyIFogLS0+CiAgPHBhdGggZD0iTTggOCBMMjQgOCBMOCAyNCBMMjQgMjQiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBmaWxsPSJub25lIi8+CiAgCiAgPCEtLSBPcHRpb25hbDogQWRkIGEgc3VidGxlIGlubmVyIGdsb3cgLS0+CiAgPGNpcmNsZSBjeD0iMTYiIGN5PSIxNiIgcj0iMTMiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjIpIiBzdHJva2Utd2lkdGg9IjEiLz4KPC9zdmc+">
+    <script src="../../script.js"></script>
 </head>
 <body>
     <header>
@@ -22,6 +23,66 @@
             </ul>
         </nav>
     </header>
+
+    <!-- Flyout Left Navigation -->
+    <button class="flyout-menu-btn" aria-label="Open navigation">&#9776;</button>
+    <aside class="flyout-nav" id="flyoutNav" aria-label="Site navigation">
+      <button class="flyout-close-btn" aria-label="Close navigation">&times;</button>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li>
+            <span>Products</span>
+            <ul>
+              <li><a href="/products/aimcs/">AIMCS</a></li>
+              <li><a href="/products/aimcs-lite/">AIMCS Lite</a></li>
+              <li><a href="/products/azure-ai-foundry/">Azure AI Foundry</a></li>
+              <li><a href="/products/azure-container-platform/">Azure Container Platform</a></li>
+              <li><a href="/products/azure-networking-security/">Azure Networking & Security</a></li>
+              <li><a href="/products/azure-data-analytics/">Azure Data & Analytics</a></li>
+            </ul>
+          </li>
+          <li>
+            <span>Services</span>
+            <ul>
+              <li><a href="/products/ai-strategy-assessment/">AI Strategy & Assessment</a></li>
+              <li><a href="/products/custom-ai-development/">Custom AI Development</a></li>
+              <li><a href="/products/ai-integration-services/">AI Integration Services</a></li>
+              <li><a href="/products/devops-automation/">DevOps & Automation</a></li>
+              <li><a href="/products/application-modernization/">Application Modernization</a></li>
+              <li><a href="/products/monitoring-optimization/">Monitoring & Optimization</a></li>
+            </ul>
+          </li>
+          <li>
+            <span>Managed Services</span>
+            <ul>
+              <li><a href="/products/azure-infrastructure-management/">Azure Infrastructure Management</a></li>
+              <li><a href="/products/ai-platform-operations/">AI Platform Operations</a></li>
+              <li><a href="/products/support-training/">Support & Training</a></li>
+            </ul>
+          </li>
+          <li>
+            <span>Industry Solutions</span>
+            <ul>
+              <li><a href="/products/healthcare-ai-solutions/">Healthcare AI</a></li>
+              <li><a href="/products/financial-services-ai/">Financial Services AI</a></li>
+              <li><a href="/products/retail-ecommerce-ai/">Retail & E-commerce AI</a></li>
+              <li><a href="/products/manufacturing-ai/">Manufacturing AI</a></li>
+            </ul>
+          </li>
+          <li>
+            <span>Packages</span>
+            <ul>
+              <li><a href="/products/enterprise-package/">Enterprise Package</a></li>
+              <li><a href="/products/startup-package/">Startup Package</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <div class="flyout-overlay" id="flyoutOverlay"></div>
+
     <nav class="breadcrumb-nav">
         <div class="container">
             <ol class="breadcrumb">

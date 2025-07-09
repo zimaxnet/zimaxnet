@@ -119,6 +119,32 @@ document.addEventListener('DOMContentLoaded', function() {
             userAgent: navigator.userAgent
         });
     });
+
+    // Flyout navigation logic
+  const flyoutBtn = document.querySelector('.flyout-menu-btn');
+  const flyoutNav = document.getElementById('flyoutNav');
+  const flyoutClose = document.querySelector('.flyout-close-btn');
+  const flyoutOverlay = document.getElementById('flyoutOverlay');
+
+  function openFlyout() {
+    flyoutNav.classList.add('open');
+    flyoutOverlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeFlyout() {
+    flyoutNav.classList.remove('open');
+    flyoutOverlay.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  if (flyoutBtn && flyoutNav && flyoutOverlay) {
+    flyoutBtn.addEventListener('click', openFlyout);
+    flyoutClose.addEventListener('click', closeFlyout);
+    flyoutOverlay.addEventListener('click', closeFlyout);
+    // Optional: close on ESC
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeFlyout();
+    });
+  }
 });
 
 // Utility functions
