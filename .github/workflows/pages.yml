@@ -40,6 +40,7 @@ jobs:
       run: |
         mkdir -p build
         cp index.html styles.css script.js favicon.svg build/
+        cp -r products build/
         
     - name: Generate sitemap
       run: |
@@ -51,6 +52,12 @@ jobs:
             <lastmod>$(date -u +%Y-%m-%d)</lastmod>
             <changefreq>weekly</changefreq>
             <priority>1.0</priority>
+          </url>
+          <url>
+            <loc>https://zimaxnet.github.io/zimaxnet/products/</loc>
+            <lastmod>$(date -u +%Y-%m-%d)</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>0.8</priority>
           </url>
         </urlset>
         EOF
