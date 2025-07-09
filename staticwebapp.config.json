@@ -1,7 +1,8 @@
 {
+  "trailingSlash": "auto",
   "navigationFallback": {
     "rewrite": "/index.html",
-    "exclude": ["/images/*", "/css/*", "/js/*", "/api/*", "*.html"]
+    "exclude": ["/images/*", "/css/*", "/js/*", "/api/*"]
   },
   "responseOverrides": {
     "404": {
