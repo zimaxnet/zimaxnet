@@ -1,21 +1,17 @@
 {
   "routes": [
     {
-      "route": "/products/*",
-      "serve": "/products/*"
-    },
-    {
       "route": "/products",
       "serve": "/products/index.html"
     },
     {
-      "route": "/*",
-      "serve": "/*"
+      "route": "/products/",
+      "serve": "/products/index.html"
     }
   ],
   "navigationFallback": {
     "rewrite": "/index.html",
-    "exclude": ["/images/*", "/css/*", "/js/*", "/api/*"]
+    "exclude": ["/products/*", "/images/*", "/css/*", "/js/*", "/api/*"]
   },
   "responseOverrides": {
     "404": {
