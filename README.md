@@ -20,9 +20,36 @@ This repository contains the **Zimax Networks website deployment** - our primary
 - **Technical Thought Leadership**: Showcasing our expertise in Azure AI development and architecture
 - **Solution Information**: Providing comprehensive details about our AI development capabilities
 - **Resource Hub**: Central repository for technical documentation, case studies, and implementation guides
+- **Products & Services Portfolio**: Complete showcase of our comprehensive AI solutions and enterprise packages
 
 ### Live AI Platform Demonstration
 Our flagship **AIMCS (AI Multimodal Customer System)** platform is live and demonstrated at [aimcs.net](https://aimcs.net) - showcasing our complete multimodal AI customer interaction solution.
+
+### Comprehensive Products & Services Portfolio
+Our complete portfolio is now available at [zimax.net/products](https://zimax.net/products) featuring:
+
+**Flagship Products:**
+- **AIMCS** - AI Management & Control System
+- **AIMCS Lite** - Streamlined AI platform
+
+**Azure Infrastructure Services:**
+- Azure AI Foundry, Container Platform, Networking & Security, Data & Analytics
+
+**AI Consulting & Development:**
+- AI Strategy & Assessment, Custom AI Development, AI Integration Services
+
+**Technical Implementation:**
+- DevOps & Automation, Application Modernization, Monitoring & Optimization
+
+**Managed Services:**
+- Azure Infrastructure Management, AI Platform Operations, Support & Training
+
+**Industry-Specific Solutions:**
+- Healthcare AI (HIPAA-compliant), Financial Services AI, Retail & E-commerce AI, Manufacturing AI
+
+**Service Packages:**
+- Enterprise Package (comprehensive strategy and support)
+- Startup Package (rapid implementation and MVP development)
 
 ---
 
@@ -198,6 +225,8 @@ For enterprise customers interested in Azure-native AI solutions, custom develop
 - **Multimodal Customer Systems** implementation
 - **Enterprise AI Architecture** and consulting
 - **Azure AI Foundry** solutions
+- **Industry-Specific AI Solutions** (Healthcare, Financial Services, Retail, Manufacturing)
+- **Comprehensive Service Packages** (Enterprise and Startup packages)
 - **Model Context Protocol** integrations
 
 ---
