@@ -237,3 +237,36 @@ For enterprise customers interested in Azure-native AI solutions, custom develop
 **Next Review**: August 3, 2025  
 
 *This repository contains the complete strategic foundation for Zimax Networks' website deployment and enterprise customer awareness campaign through SEO and LLM ranking optimization. All documentation is ready for implementation.*
+
+# Azure Front Door Security Hardening for zimax.net
+
+## Overview
+zimax.net is protected by Azure Front Door Standard/Premium, with a focus on enterprise-grade security and compliance. The configuration achieves an SSL Labs A rating and implements all modern best-practice HTTP security headers.
+
+## Key Security Features
+
+- **TLS 1.3 and 1.2 Only**: Legacy/insecure protocols are disabled. All modern browsers are supported.
+- **SSL Labs A Rating**: Confirmed by Qualys SSL Labs, including strong ciphers and certificate chain.
+- **HSTS Preloading**: `Strict-Transport-Security` header set to `max-age=63072000; includeSubDomains; preload` (2 years), making the site eligible for browser HSTS preload lists.
+- **Security Headers Implemented**:
+  - `Strict-Transport-Security`: Enforces HTTPS and enables HSTS preloading.
+  - `X-Frame-Options: DENY`: Prevents clickjacking by disallowing the site in iframes.
+  - `X-Content-Type-Options: nosniff`: Prevents MIME type sniffing.
+  - `Referrer-Policy: strict-origin-when-cross-origin`: Limits referrer data sent to other sites.
+  - `X-XSS-Protection: 1; mode=block`: Enables browser XSS filtering.
+  - `Content-Security-Policy: default-src 'self'`: Restricts resource loading to the same origin.
+
+## Implementation Details
+- **Infrastructure as Code**: All security headers and routing rules are managed via Bicep templates, ensuring repeatable, auditable, and automated deployments.
+- **Azure DevOps Automation**: Bicep deployments are integrated into the CI/CD pipeline for zero-touch security updates.
+- **Continuous Monitoring**: SSL Labs and securityheaders.com are used to validate configuration after every deployment.
+
+## Why This Matters
+- **Compliance**: Meets or exceeds requirements for GDPR, SOC2, and enterprise procurement.
+- **User Trust**: Modern browsers show a secure padlock and block mixed content or insecure requests.
+- **SEO**: Google and other search engines reward secure, well-configured sites.
+
+## References
+- [SSL Labs Report for zimax.net](https://www.ssllabs.com/ssltest/analyze.html?d=zimax.net)
+- [securityheaders.com Results](https://securityheaders.com/?q=zimax.net)
+- [Azure Front Door Documentation](https://learn.microsoft.com/en-us/azure/frontdoor/)
