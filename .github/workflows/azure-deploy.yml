@@ -17,8 +17,8 @@ jobs:
 
       - name: Build
         run: |
-          mkdir build
-          cp -r ./* ./build/ || true
+          mkdir -p build
+          cp -r ./* ./build/
       
       - name: Build And Deploy
         id: builddeploy
