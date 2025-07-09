@@ -4,14 +4,9 @@
   "description": "Zimax Networks Limited - Azure-Native AI Solutions for Enterprise Customers",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"No tests specified\" && exit 0",
-    "build": "mkdir -p build && cp index.html styles.css script.js favicon.svg build/",
-    "deploy": "npm run build",
-    "lighthouse": "lighthouse https://zimax.net --output=json --output-path=./lighthouse-report.json",
-    "validate": "npm run validate:html && npm run validate:css && npm run validate:js",
-    "validate:html": "grep -q '<!DOCTYPE html>' index.html && echo '✅ HTML validation passed'",
-    "validate:css": "grep -q 'body {' styles.css && echo '✅ CSS validation passed'",
-    "validate:js": "grep -q 'document.addEventListener' script.js && echo '✅ JavaScript validation passed'"
+    "dev": "vite",
+    "build": "node build.js",
+    "preview": "vite preview"
   },
   "keywords": [
     "azure",
@@ -30,10 +25,15 @@
   },
   "homepage": "https://zimax.net",
   "devDependencies": {
-    "@lhci/cli": "^0.12.0",
-    "lighthouse": "^11.0.0"
+    "@lhci/cli": "^0.15.1",
+    "lighthouse": "^12.7.1",
+    "vite": "^5.3.4"
+  },
+  "dependencies": {
+    "fs-extra": "^11.2.0",
+    "glob": "^11.0.0"
   },
   "engines": {
     "node": ">=18.0.0"
   }
-} 
+}
