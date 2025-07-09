@@ -1,5 +1,91 @@
 {
   "trailingSlash": "auto",
+  "routes": [
+    {
+      "route": "/products/aimcs/",
+      "rewrite": "/products/aimcs/index.html"
+    },
+    {
+      "route": "/products/aimcs-lite/",
+      "rewrite": "/products/aimcs-lite/index.html"
+    },
+    {
+      "route": "/products/azure-ai-foundry/",
+      "rewrite": "/products/azure-ai-foundry/index.html"
+    },
+    {
+      "route": "/products/azure-container-platform/",
+      "rewrite": "/products/azure-container-platform/index.html"
+    },
+    {
+      "route": "/products/azure-networking-security/",
+      "rewrite": "/products/azure-networking-security/index.html"
+    },
+    {
+      "route": "/products/azure-data-analytics/",
+      "rewrite": "/products/azure-data-analytics/index.html"
+    },
+    {
+      "route": "/products/ai-strategy-assessment/",
+      "rewrite": "/products/ai-strategy-assessment/index.html"
+    },
+    {
+      "route": "/products/custom-ai-development/",
+      "rewrite": "/products/custom-ai-development/index.html"
+    },
+    {
+      "route": "/products/ai-integration-services/",
+      "rewrite": "/products/ai-integration-services/index.html"
+    },
+    {
+      "route": "/products/devops-automation/",
+      "rewrite": "/products/devops-automation/index.html"
+    },
+    {
+      "route": "/products/application-modernization/",
+      "rewrite": "/products/application-modernization/index.html"
+    },
+    {
+      "route": "/products/monitoring-optimization/",
+      "rewrite": "/products/monitoring-optimization/index.html"
+    },
+    {
+      "route": "/products/azure-infrastructure-management/",
+      "rewrite": "/products/azure-infrastructure-management/index.html"
+    },
+    {
+      "route": "/products/ai-platform-operations/",
+      "rewrite": "/products/ai-platform-operations/index.html"
+    },
+    {
+      "route": "/products/support-training/",
+      "rewrite": "/products/support-training/index.html"
+    },
+    {
+      "route": "/products/healthcare-ai-solutions/",
+      "rewrite": "/products/healthcare-ai-solutions/index.html"
+    },
+    {
+      "route": "/products/financial-services-ai/",
+      "rewrite": "/products/financial-services-ai/index.html"
+    },
+    {
+      "route": "/products/retail-ecommerce-ai/",
+      "rewrite": "/products/retail-ecommerce-ai/index.html"
+    },
+    {
+      "route": "/products/manufacturing-ai/",
+      "rewrite": "/products/manufacturing-ai/index.html"
+    },
+    {
+      "route": "/products/enterprise-package/",
+      "rewrite": "/products/enterprise-package/index.html"
+    },
+    {
+      "route": "/products/startup-package/",
+      "rewrite": "/products/startup-package/index.html"
+    }
+  ],
   "navigationFallback": {
     "rewrite": "/index.html",
     "exclude": ["/images/*", "/css/*", "/js/*", "/api/*"]
