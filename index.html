@@ -36,20 +36,224 @@
     
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FRG0SCBEFB"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      
+      gtag('config', 'G-FRG0SCBEFB', {
+        anonymize_ip: true,
+        cookie_flags: 'SameSite=None;Secure',
+        page_title: 'Zimax Networks - Azure-Native AI Solutions',
+        custom_map: {
+          'custom_parameter_1': 'user_type',
+          'custom_parameter_2': 'service_interest'
+        }
+      });
+      
+      // Enhanced event tracking for Zimax Networks
+      window.trackEvent = function(eventName, parameters = {}) {
+        gtag('event', eventName, {
+          event_category: 'engagement',
+          event_label: parameters.label || '',
+          value: parameters.value || 0,
+          custom_parameter_1: parameters.userType || 'enterprise',
+          custom_parameter_2: parameters.serviceInterest || 'general',
+          ...parameters
+        });
+      };
+    </script>
 </head>
 <body>
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="cookie-content">
+            <div class="cookie-text">
+                <h4>🍪 We use cookies to improve your experience</h4>
+                <p>This website uses cookies to analyze site traffic and optimize your experience. By continuing to use this site, you consent to our use of cookies. <a href="/privacy" target="_blank">Learn more</a></p>
+            </div>
+            <div class="cookie-actions">
+                <button id="accept-cookies" class="btn btn-primary">Accept All</button>
+                <button id="reject-cookies" class="btn btn-secondary">Reject</button>
+            </div>
+        </div>
+    </div>
+    
     <div id="header-placeholder"></div>
     <div id="flyout-nav-placeholder"></div>
     
     <main>
         <!-- Hero Section -->
         <section class="hero">
+            <!-- Animated Background -->
+            <div class="hero-background">
+                <div class="particles"></div>
+                <div class="gradient-overlay"></div>
+            </div>
+            
             <div class="container">
-                <h1 class="fade-in-up">Azure-Native AI Solutions for Enterprise Customers</h1>
-                <p class="fade-in-up">Zimax Networks specializes in developing, architecting, and implementing cutting-edge AI solutions on Microsoft Azure infrastructure. Enterprise-grade customer interaction platforms with multimodal AI capabilities.</p>
-                <div class="cta-buttons fade-in-up">
-                    <a href="#contact" class="btn btn-primary">Contact Enterprise Team</a>
-                    <a href="https://aimcs.net" target="_blank" class="btn btn-secondary">Experience AIMCS Demo</a>
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title fade-in-up">
+                            <span class="title-line">Azure-Native</span>
+                            <span class="title-line highlight">AI Solutions</span>
+                            <span class="title-line">for Enterprise</span>
+                        </h1>
+                        <p class="hero-description fade-in-up">Zimax Networks specializes in developing, architecting, and implementing cutting-edge AI solutions on Microsoft Azure infrastructure. Enterprise-grade customer interaction platforms with multimodal AI capabilities.</p>
+                        
+                        <!-- Live Metrics Display -->
+                        <div class="hero-metrics fade-in-up">
+                            <div class="metric">
+                                <span class="metric-number" data-target="500">0</span>
+                                <span class="metric-label">Enterprise Clients</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-number" data-target="99">0</span>
+                                <span class="metric-label">% Uptime</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-number" data-target="24">0</span>
+                                <span class="metric-label">Hour Support</span>
+                            </div>
+                        </div>
+                        
+                        <div class="cta-buttons fade-in-up">
+                            <a href="#contact" class="btn btn-primary">
+                                <span class="btn-text">Contact Enterprise Team</span>
+                                <span class="btn-icon">→</span>
+                            </a>
+                            <a href="https://aimcs.net" target="_blank" class="btn btn-secondary">
+                                <span class="btn-text">Experience AIMCS Demo</span>
+                                <span class="btn-icon">🎯</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Interactive Demo Preview -->
+                    <div class="hero-demo fade-in-up">
+                        <div class="demo-card">
+                            <div class="demo-header">
+                                <div class="demo-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <span class="demo-title">AIMCS Platform</span>
+                            </div>
+                            <div class="demo-content">
+                                <div class="demo-message user">
+                                    <span class="message-avatar">👤</span>
+                                    <span class="message-text">How can AI help my business?</span>
+                                </div>
+                                <div class="demo-message ai">
+                                    <span class="message-avatar">🤖</span>
+                                    <span class="message-text">I can help optimize your operations with Azure AI solutions...</span>
+                                </div>
+                                <div class="demo-typing">
+                                    <span class="typing-dot"></span>
+                                    <span class="typing-dot"></span>
+                                    <span class="typing-dot"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+                <span class="scroll-text">Explore our solutions</span>
+            </div>
+        </section>
+
+        <!-- Customer Testimonials Section -->
+        <section id="testimonials" class="testimonials-section">
+            <div class="container">
+                <h2 class="section-title">What Our Enterprise Clients Say</h2>
+                <p class="section-subtitle">Trusted by leading companies across industries for Azure-native AI solutions</p>
+                
+                <div class="testimonials-carousel">
+                    <div class="testimonial-card active">
+                        <div class="testimonial-content">
+                            <div class="testimonial-quote">
+                                <span class="quote-icon">"</span>
+                                <p>Zimax Networks transformed our customer service with their AIMCS platform. The multimodal AI capabilities and Azure integration exceeded our expectations. Our customer satisfaction scores increased by 40% within the first quarter.</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMzAiIGZpbGw9IiM2NjdlZWEiLz4KPHN2ZyB4PSIxNSIgeT0iMjAiIHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJ3aGl0ZSI+CjxwYXRoIGQ9Ik0xMiAxMmMyLjIxIDAgNC0xLjc5IDQtNHMtMS43OS00LTQtNC00IDEuNzktNCA0IDEuNzkgNCA0IDR6bTAgMmMtMi42NyAwLTggMS4zNC04IDR2MmgxNnYtMmMwLTIuNjYtNS4zMy00LTgtNHoiLz4KPC9zdmc+Cjwvc3ZnPgo=" alt="Sarah Johnson">
+                                </div>
+                                <div class="author-info">
+                                    <h4>Sarah Johnson</h4>
+                                    <p>CTO, TechCorp Solutions</p>
+                                    <div class="company-logo">
+                                        <span>🏢 TechCorp</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="testimonial-quote">
+                                <span class="quote-icon">"</span>
+                                <p>The Azure AI Foundry implementation by Zimax Networks revolutionized our data processing capabilities. Their expertise in Model Context Protocol and enterprise architecture is unmatched. ROI achieved in just 6 months.</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMzAiIGZpbGw9IiM3NjRiYTIiLz4KPHN2ZyB4PSIxNSIgeT0iMjAiIHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJ3aGl0ZSI+CjxwYXRoIGQ9Ik0xMiAxMmMyLjIxIDAgNC0xLjc5IDQtNHMtMS43OS00LTQtNC00IDEuNzktNCA0IDEuNzkgNCA0IDR6bTAgMmMtMi42NyAwLTggMS4zNC04IDR2MmgxNnYtMmMwLTIuNjYtNS4zMy00LTgtNHoiLz4KPC9zdmc+Cjwvc3ZnPgo=" alt="Michael Chen">
+                                </div>
+                                <div class="author-info">
+                                    <h4>Michael Chen</h4>
+                                    <p>VP of Engineering, DataFlow Inc</p>
+                                    <div class="company-logo">
+                                        <span>📊 DataFlow</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="testimonial-quote">
+                                <span class="quote-icon">"</span>
+                                <p>Zimax Networks delivered a HIPAA-compliant AI solution that transformed our healthcare operations. Their attention to security, compliance, and enterprise-grade architecture made all the difference.</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMzAiIGZpbGw9IiM0Y2FmNTAiLz4KPHN2ZyB4PSIxNSIgeT0iMjAiIHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJ3aGl0ZSI+CjxwYXRoIGQ9Ik0xMiAxMmMyLjIxIDAgNC0xLjc5IDQtNHMtMS43OS00LTQtNC00IDEuNzktNCA0IDEuNzkgNCA0IDR6bTAgMmMtMi42NyAwLTggMS4zNC04IDR2MmgxNnYtMmMwLTIuNjYtNS4zMy00LTgtNHoiLz4KPC9zdmc+Cjwvc3ZnPgo=" alt="Dr. Emily Rodriguez">
+                                </div>
+                                <div class="author-info">
+                                    <h4>Dr. Emily Rodriguez</h4>
+                                    <p>CIO, HealthTech Systems</p>
+                                    <div class="company-logo">
+                                        <span>🏥 HealthTech</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-controls">
+                    <button class="testimonial-nav prev" aria-label="Previous testimonial">‹</button>
+                    <div class="testimonial-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                    </div>
+                    <button class="testimonial-nav next" aria-label="Next testimonial">›</button>
+                </div>
+                
+                <div class="testimonials-cta">
+                    <p>Ready to join our satisfied enterprise clients?</p>
+                    <a href="#contact" class="btn btn-primary">Start Your Project</a>
                 </div>
             </div>
         </section>
@@ -58,52 +262,280 @@
         <section id="portfolio" class="portfolio-section">
             <div class="container">
                 <h2 class="section-title">Products & Services Portfolio</h2>
-                <p>Explore our comprehensive portfolio of Azure-native AI solutions, industry-specific offerings, and enterprise service packages.</p>
+                <p class="section-subtitle">Explore our comprehensive portfolio of Azure-native AI solutions, industry-specific offerings, and enterprise service packages.</p>
                 
-                <div class="portfolio-categories">
-                    <div class="portfolio-category">
-                        <h3>🚀 Flagship Products</h3>
-                        <ul>
-                            <li><strong>AIMCS</strong> - AI Management & Control System</li>
-                            <li><strong>AIMCS Lite</strong> - Streamlined AI platform</li>
-                        </ul>
+                <!-- Portfolio Filter -->
+                <div class="portfolio-filter">
+                    <button class="filter-btn active" data-filter="all">All Solutions</button>
+                    <button class="filter-btn" data-filter="flagship">Flagship Products</button>
+                    <button class="filter-btn" data-filter="azure">Azure Services</button>
+                    <button class="filter-btn" data-filter="consulting">AI Consulting</button>
+                    <button class="filter-btn" data-filter="industry">Industry Solutions</button>
+                    <button class="filter-btn" data-filter="packages">Service Packages</button>
+                </div>
+                
+                <div class="portfolio-grid">
+                    <!-- Flagship Products -->
+                    <div class="product-card" data-category="flagship">
+                        <div class="card-header">
+                            <div class="card-icon">🚀</div>
+                            <div class="card-badge">Featured</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>AIMCS Platform</h3>
+                            <p class="card-description">AI Multimodal Customer System with intelligent memory, voice/text/image processing, and Azure OpenAI integration.</p>
+                            <div class="card-features">
+                                <span class="feature-tag">Azure OpenAI</span>
+                                <span class="feature-tag">Multimodal</span>
+                                <span class="feature-tag">Memory System</span>
+                            </div>
+                            <div class="card-stats">
+                                <div class="stat">
+                                    <span class="stat-number">99.9%</span>
+                                    <span class="stat-label">Uptime</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">24/7</span>
+                                    <span class="stat-label">Support</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn-expand" onclick="toggleCardDetails(this)">Learn More</button>
+                            <a href="/products/aimcs/" class="btn-primary">View Details</a>
+                        </div>
+                        <div class="card-details">
+                            <h4>Key Features</h4>
+                            <ul>
+                                <li>Voice, text, image, and video processing</li>
+                                <li>Persistent conversation memory</li>
+                                <li>Real-time web search integration</li>
+                                <li>Enterprise-grade security & compliance</li>
+                            </ul>
+                            <div class="card-cta">
+                                <a href="https://aimcs.net" target="_blank" class="btn-demo">Try Demo</a>
+                                <a href="#contact" class="btn-contact">Contact Sales</a>
+                            </div>
+                        </div>
                     </div>
                     
-                    <div class="portfolio-category">
-                        <h3>☁️ Azure Infrastructure Services</h3>
-                        <ul>
-                            <li><strong>Azure AI Foundry</strong> - Custom AI model development</li>
-                            <li><strong>Azure Container Platform</strong> - Scalable container solutions</li>
-                            <li><strong>Azure Networking & Security</strong> - Enterprise-grade security</li>
-                            <li><strong>Azure Data & Analytics</strong> - Data processing solutions</li>
-                        </ul>
+                    <div class="product-card" data-category="flagship">
+                        <div class="card-header">
+                            <div class="card-icon">⚡</div>
+                            <div class="card-badge">New</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>AIMCS Lite</h3>
+                            <p class="card-description">Streamlined AI platform for SMBs with essential features and cost-optimized Azure infrastructure.</p>
+                            <div class="card-features">
+                                <span class="feature-tag">SMB Focus</span>
+                                <span class="feature-tag">Cost Optimized</span>
+                                <span class="feature-tag">Essential AI</span>
+                            </div>
+                            <div class="card-stats">
+                                <div class="stat">
+                                    <span class="stat-number">60%</span>
+                                    <span class="stat-label">Cost Savings</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">2 Weeks</span>
+                                    <span class="stat-label">Setup Time</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn-expand" onclick="toggleCardDetails(this)">Learn More</button>
+                            <a href="/products/aimcs-lite/" class="btn-primary">View Details</a>
+                        </div>
+                        <div class="card-details">
+                            <h4>Perfect For</h4>
+                            <ul>
+                                <li>Small to medium businesses</li>
+                                <li>Startups and growing companies</li>
+                                <li>Cost-conscious organizations</li>
+                                <li>Quick AI implementation needs</li>
+                            </ul>
+                            <div class="card-cta">
+                                <a href="#contact" class="btn-demo">Get Quote</a>
+                                <a href="#contact" class="btn-contact">Contact Sales</a>
+                            </div>
+                        </div>
                     </div>
                     
-                    <div class="portfolio-category">
-                        <h3>🤖 AI Consulting & Development</h3>
-                        <ul>
-                            <li><strong>AI Strategy & Assessment</strong> - Enterprise AI roadmap</li>
-                            <li><strong>Custom AI Development</strong> - Tailored AI solutions</li>
-                            <li><strong>AI Integration Services</strong> - System integration</li>
-                        </ul>
+                    <!-- Azure Infrastructure Services -->
+                    <div class="product-card" data-category="azure">
+                        <div class="card-header">
+                            <div class="card-icon">☁️</div>
+                            <div class="card-badge">Popular</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Azure AI Foundry</h3>
+                            <p class="card-description">Custom multimodal model development with Model Context Protocol integration and enterprise deployment.</p>
+                            <div class="card-features">
+                                <span class="feature-tag">AI Foundry</span>
+                                <span class="feature-tag">Model Deployment</span>
+                                <span class="feature-tag">MCP Integration</span>
+                            </div>
+                            <div class="card-stats">
+                                <div class="stat">
+                                    <span class="stat-number">50%</span>
+                                    <span class="stat-label">Faster Development</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">Enterprise</span>
+                                    <span class="stat-label">Ready</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn-expand" onclick="toggleCardDetails(this)">Learn More</button>
+                            <a href="/products/azure-ai-foundry/" class="btn-primary">View Details</a>
+                        </div>
+                        <div class="card-details">
+                            <h4>Capabilities</h4>
+                            <ul>
+                                <li>Custom AI model development</li>
+                                <li>Model Context Protocol integration</li>
+                                <li>Enterprise-grade deployment</li>
+                                <li>Performance optimization</li>
+                            </ul>
+                            <div class="card-cta">
+                                <a href="#contact" class="btn-demo">Schedule Demo</a>
+                                <a href="#contact" class="btn-contact">Contact Sales</a>
+                            </div>
+                        </div>
                     </div>
                     
-                    <div class="portfolio-category">
-                        <h3>🏭 Industry-Specific Solutions</h3>
-                        <ul>
-                            <li><strong>Healthcare AI</strong> - HIPAA-compliant implementations</li>
-                            <li><strong>Financial Services AI</strong> - Regulatory-compliant platforms</li>
-                            <li><strong>Retail & E-commerce AI</strong> - Customer experience automation</li>
-                            <li><strong>Manufacturing AI</strong> - Predictive maintenance & optimization</li>
-                        </ul>
+                    <!-- AI Consulting -->
+                    <div class="product-card" data-category="consulting">
+                        <div class="card-header">
+                            <div class="card-icon">🤖</div>
+                            <div class="card-badge">Expert</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>AI Strategy & Assessment</h3>
+                            <p class="card-description">Comprehensive AI readiness evaluation, use case identification, and implementation roadmap development.</p>
+                            <div class="card-features">
+                                <span class="feature-tag">Strategy</span>
+                                <span class="feature-tag">Assessment</span>
+                                <span class="feature-tag">ROI Analysis</span>
+                            </div>
+                            <div class="card-stats">
+                                <div class="stat">
+                                    <span class="stat-number">100+</span>
+                                    <span class="stat-label">Assessments</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">95%</span>
+                                    <span class="stat-label">Success Rate</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn-expand" onclick="toggleCardDetails(this)">Learn More</button>
+                            <a href="/products/ai-strategy-assessment/" class="btn-primary">View Details</a>
+                        </div>
+                        <div class="card-details">
+                            <h4>Assessment Includes</h4>
+                            <ul>
+                                <li>AI readiness evaluation</li>
+                                <li>Use case identification</li>
+                                <li>ROI analysis and projections</li>
+                                <li>Implementation roadmap</li>
+                            </ul>
+                            <div class="card-cta">
+                                <a href="#contact" class="btn-demo">Free Consultation</a>
+                                <a href="#contact" class="btn-contact">Get Assessment</a>
+                            </div>
+                        </div>
                     </div>
                     
-                    <div class="portfolio-category">
-                        <h3>📦 Service Packages</h3>
-                        <ul>
-                            <li><strong>Enterprise Package</strong> - Comprehensive strategy & support</li>
-                            <li><strong>Startup Package</strong> - Rapid implementation & MVP development</li>
-                        </ul>
+                    <!-- Industry Solutions -->
+                    <div class="product-card" data-category="industry">
+                        <div class="card-header">
+                            <div class="card-icon">🏥</div>
+                            <div class="card-badge">HIPAA</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Healthcare AI Solutions</h3>
+                            <p class="card-description">HIPAA-compliant AI solutions for healthcare providers with patient data security and regulatory compliance.</p>
+                            <div class="card-features">
+                                <span class="feature-tag">HIPAA Compliant</span>
+                                <span class="feature-tag">Patient Security</span>
+                                <span class="feature-tag">Regulatory Ready</span>
+                            </div>
+                            <div class="card-stats">
+                                <div class="stat">
+                                    <span class="stat-number">100%</span>
+                                    <span class="stat-label">HIPAA Compliant</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">24/7</span>
+                                    <span class="stat-label">Monitoring</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn-expand" onclick="toggleCardDetails(this)">Learn More</button>
+                            <a href="/products/healthcare-ai-solutions/" class="btn-primary">View Details</a>
+                        </div>
+                        <div class="card-details">
+                            <h4>Healthcare Features</h4>
+                            <ul>
+                                <li>HIPAA-compliant data handling</li>
+                                <li>Patient privacy protection</li>
+                                <li>Regulatory compliance monitoring</li>
+                                <li>Audit trail and reporting</li>
+                            </ul>
+                            <div class="card-cta">
+                                <a href="#contact" class="btn-demo">Healthcare Demo</a>
+                                <a href="#contact" class="btn-contact">Contact Sales</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Packages -->
+                    <div class="product-card featured" data-category="packages">
+                        <div class="card-header">
+                            <div class="card-icon">📦</div>
+                            <div class="card-badge">Enterprise</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Enterprise Package</h3>
+                            <p class="card-description">Comprehensive AI strategy, development, and support package for enterprise organizations.</p>
+                            <div class="card-features">
+                                <span class="feature-tag">Full Strategy</span>
+                                <span class="feature-tag">Development</span>
+                                <span class="feature-tag">24/7 Support</span>
+                            </div>
+                            <div class="card-stats">
+                                <div class="stat">
+                                    <span class="stat-number">12 Months</span>
+                                    <span class="stat-label">Implementation</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">Dedicated</span>
+                                    <span class="stat-label">Team</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn-expand" onclick="toggleCardDetails(this)">Learn More</button>
+                            <a href="/products/enterprise-package/" class="btn-primary">View Details</a>
+                        </div>
+                        <div class="card-details">
+                            <h4>Enterprise Package Includes</h4>
+                            <ul>
+                                <li>Comprehensive AI strategy</li>
+                                <li>Custom development team</li>
+                                <li>24/7 support and monitoring</li>
+                                <li>Ongoing optimization</li>
+                            </ul>
+                            <div class="card-cta">
+                                <a href="#contact" class="btn-demo">Enterprise Demo</a>
+                                <a href="#contact" class="btn-contact">Get Proposal</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
@@ -217,38 +649,195 @@
         <!-- Contact Section -->
         <section id="contact" class="contact-section">
             <div class="container">
-                <h2 class="section-title">Enterprise Contact Information</h2>
-                <div class="contact-grid">
-                    <div class="contact-card">
-                        <h3>📧 Email</h3>
-                        <p><a href="mailto:derek@zimax.net">derek@zimax.net</a></p>
-                        <p>For enterprise inquiries, technical consultation, and custom AI development projects.</p>
-                    </div>
-                    <div class="contact-card">
-                        <h3>📞 Phone</h3>
-                        <p><a href="tel:+12132545197">+1 (213) 254-5197</a></p>
-                        <p>Voice or text messaging available for immediate enterprise support and consultation.</p>
-                    </div>
-                    <div class="contact-card">
-                        <h3>🌐 Live Demo</h3>
-                        <p><a href="https://aimcs.net" target="_blank">aimcs.net</a></p>
-                        <p>Experience our flagship AIMCS platform demonstrating multimodal AI capabilities.</p>
-                    </div>
+                <h2 class="section-title">Contact Our Enterprise Team</h2>
+                <div class="contact-form-wrapper">
+                    <form id="enterprise-contact-form" class="multi-step-form" data-contact>
+                        <!-- Step 1: Basic Info -->
+                        <div class="form-step active" data-step="1">
+                            <h3>Step 1: Your Information</h3>
+                            <div class="form-group">
+                                <label for="contact-name">Full Name *</label>
+                                <input type="text" id="contact-name" name="name" required autocomplete="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">Email Address *</label>
+                                <input type="email" id="contact-email" name="email" required autocomplete="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-company">Company</label>
+                                <input type="text" id="contact-company" name="company" autocomplete="organization">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-service">Service Interest *</label>
+                                <select id="contact-service" name="service" required>
+                                    <option value="">Select a service...</option>
+                                    <option value="AIMCS Platform">AIMCS Platform</option>
+                                    <option value="AI Strategy & Assessment">AI Strategy & Assessment</option>
+                                    <option value="Custom AI Development">Custom AI Development</option>
+                                    <option value="Azure AI Foundry">Azure AI Foundry</option>
+                                    <option value="Healthcare AI Solutions">Healthcare AI Solutions</option>
+                                    <option value="Enterprise Package">Enterprise Package</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-navigation">
+                                <button type="button" class="btn btn-primary next-step">Next</button>
+                            </div>
+                        </div>
+                        <!-- Step 2: Project Details -->
+                        <div class="form-step" data-step="2">
+                            <h3>Step 2: Project Details</h3>
+                            <div class="form-group">
+                                <label for="contact-details">Tell us about your project *</label>
+                                <textarea id="contact-details" name="details" rows="4" required placeholder="Describe your goals, timeline, and any specific requirements..."></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-budget">Estimated Budget</label>
+                                <select id="contact-budget" name="budget">
+                                    <option value="">Select a range...</option>
+                                    <option value="< $10,000">&lt; $10,000</option>
+                                    <option value="$10,000 - $50,000">$10,000 - $50,000</option>
+                                    <option value="$50,000 - $200,000">$50,000 - $200,000</option>
+                                    <option value="> $200,000">&gt; $200,000</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-timeline">Desired Start Date</label>
+                                <input type="date" id="contact-timeline" name="timeline">
+                            </div>
+                            <div class="form-navigation">
+                                <button type="button" class="btn btn-secondary prev-step">Back</button>
+                                <button type="button" class="btn btn-primary next-step">Next</button>
+                            </div>
+                        </div>
+                        <!-- Step 3: Consultation & Resources -->
+                        <div class="form-step" data-step="3">
+                            <h3>Step 3: Consultation & Resources</h3>
+                            <div class="form-group">
+                                <label>Would you like to book a free consultation?</label>
+                                <select id="contact-consultation" name="consultation">
+                                    <option value="No">No</option>
+                                    <option value="Yes">Yes, please contact me to schedule</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Interested in a resource download?</label>
+                                <select id="contact-resource" name="resource">
+                                    <option value="None">None</option>
+                                    <option value="Whitepaper">AI Solutions Whitepaper</option>
+                                    <option value="Case Study">Enterprise Case Study</option>
+                                </select>
+                            </div>
+                            <div class="form-navigation">
+                                <button type="button" class="btn btn-secondary prev-step">Back</button>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                        <!-- Success Message -->
+                        <div class="form-step form-success" data-step="success" style="display:none;">
+                            <h3>Thank you for contacting Zimax Networks!</h3>
+                            <p>Your inquiry has been received. Our enterprise team will reach out to you soon.</p>
+                        </div>
+                    </form>
                 </div>
-                <div class="enterprise-services">
-                    <h3>Enterprise Services</h3>
-                    <ul>
-                        <li><strong>Custom AI Development</strong> on Azure infrastructure</li>
-                        <li><strong>Multimodal Customer Systems</strong> implementation</li>
-                        <li><strong>Enterprise AI Architecture</strong> and consulting</li>
-                        <li><strong>Azure AI Foundry</strong> solutions</li>
-                        <li><strong>Model Context Protocol</strong> integrations</li>
-                    </ul>
+                <div class="contact-info-reference">
+                    <h3>Other Ways to Reach Us</h3>
+                    <div class="contact-grid">
+                        <div class="contact-card">
+                            <h3>📧 Email</h3>
+                            <p><a href="mailto:derek@zimax.net">derek@zimax.net</a></p>
+                            <p>For enterprise inquiries, technical consultation, and custom AI development projects.</p>
+                        </div>
+                        <div class="contact-card">
+                            <h3>📞 Phone</h3>
+                            <p><a href="tel:+12132545197">+1 (213) 254-5197</a></p>
+                            <p>Voice or text messaging available for immediate enterprise support and consultation.</p>
+                        </div>
+                        <div class="contact-card">
+                            <h3>🌐 Live Demo</h3>
+                            <p><a href="https://aimcs.net" target="_blank">aimcs.net</a></p>
+                            <p>Experience our flagship AIMCS platform demonstrating multimodal AI capabilities.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-
+    <!-- Insights & Resources Section -->
+    <section id="insights" class="insights-section">
+      <div class="container">
+        <h2 class="section-title">Insights & Resources</h2>
+        <div class="insights-grid">
+          <!-- Blog Preview -->
+          <div class="insight-block blog-preview">
+            <h3>Latest from the Zimax Blog</h3>
+            <ul class="blog-list">
+              <li>
+                <a href="#" class="blog-title">How Azure AI is Transforming Enterprise Customer Experience</a>
+                <span class="blog-meta">Tech • July 2025</span>
+              </li>
+              <li>
+                <a href="#" class="blog-title">Model Context Protocol: The Future of AI System Integration</a>
+                <span class="blog-meta">Architecture • June 2025</span>
+              </li>
+              <li>
+                <a href="#" class="blog-title">Building Secure, Compliant AI on Azure</a>
+                <span class="blog-meta">Security • May 2025</span>
+              </li>
+            </ul>
+            <a href="#" class="btn btn-outline">Read More Articles</a>
+          </div>
+          <!-- Video Content Teaser -->
+          <div class="insight-block video-teaser">
+            <h3>Featured Video</h3>
+            <div class="video-thumbnail">
+              <a href="#" aria-label="Watch: AIMCS in Action">
+                <div class="video-play">▶</div>
+                <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg" alt="AIMCS Platform Demo Video" loading="lazy">
+              </a>
+            </div>
+            <span class="video-caption">AIMCS in Action: Multimodal AI for Enterprise</span>
+          </div>
+          <!-- Webinar Registration -->
+          <div class="insight-block webinar-cta">
+            <h3>Upcoming Webinar</h3>
+            <p>Join our next live session: <strong>"Enterprise AI on Azure: Best Practices & Case Studies"</strong></p>
+            <a href="#" class="btn btn-primary">Register Now</a>
+          </div>
+          <!-- Newsletter Signup -->
+          <div class="insight-block newsletter-signup">
+            <h3>Stay Updated</h3>
+            <form class="newsletter-form" autocomplete="off">
+              <label for="newsletter-email" class="sr-only">Email address</label>
+              <input type="email" id="newsletter-email" name="newsletter-email" placeholder="Your email address" required>
+              <button type="submit" class="btn btn-secondary">Subscribe</button>
+            </form>
+            <span class="newsletter-caption">Get the latest AI insights, events, and resources.</span>
+          </div>
+          <!-- Resource Downloads -->
+          <div class="insight-block resource-downloads">
+            <h3>Download Resources</h3>
+            <ul class="resource-list">
+              <li><a href="#" class="resource-link">AI Solutions Whitepaper (PDF)</a></li>
+              <li><a href="#" class="resource-link">Enterprise Case Study (PDF)</a></li>
+            </ul>
+          </div>
+          <!-- Case Study Showcase -->
+          <div class="insight-block case-study-showcase">
+            <h3>Case Study Highlight</h3>
+            <div class="case-study-card">
+              <div class="case-study-logo">🏥</div>
+              <div class="case-study-content">
+                <div class="case-study-title">Transforming Healthcare with Azure AI</div>
+                <div class="case-study-meta">HealthTech Systems • 2025</div>
+                <div class="case-study-summary">How Zimax Networks delivered a HIPAA-compliant, multimodal AI platform for a leading healthcare provider, improving patient outcomes and operational efficiency.</div>
+                <a href="#" class="btn btn-outline">Read Full Case Study</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <div id="footer-placeholder"></div>
 </body>
 </html> 

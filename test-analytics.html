@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics Test - Zimax Networks</title>
+    
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FRG0SCBEFB"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      
+      gtag('config', 'G-FRG0SCBEFB', {
+        anonymize_ip: true,
+        cookie_flags: 'SameSite=None;Secure',
+        page_title: 'Analytics Test - Zimax Networks',
+        custom_map: {
+          'custom_parameter_1': 'user_type',
+          'custom_parameter_2': 'service_interest'
+        }
+      });
+      
+      // Enhanced event tracking for Zimax Networks
+      window.trackEvent = function(eventName, parameters = {}) {
+        gtag('event', eventName, {
+          event_category: 'engagement',
+          event_label: parameters.label || '',
+          value: parameters.value || 0,
+          custom_parameter_1: parameters.userType || 'enterprise',
+          custom_parameter_2: parameters.serviceInterest || 'general',
+          ...parameters
+        });
+        console.log('Event tracked:', eventName, parameters);
+      };
+    </script>
+    
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .test-section { margin: 20px 0; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+        .btn { padding: 10px 20px; margin: 5px; border: none; border-radius: 4px; cursor: pointer; }
+        .btn-primary { background: #667eea; color: white; }
+        .btn-secondary { background: #764ba2; color: white; }
+        .form-group { margin: 10px 0; }
+        input, textarea { padding: 8px; margin: 5px; border: 1px solid #ddd; border-radius: 4px; }
+        .cookie-banner { position: fixed; bottom: 0; left: 0; right: 0; background: white; border-top: 1px solid #ddd; padding: 20px; z-index: 1000; }
+    </style>
+</head>
+<body>
+    <h1>Analytics Test Page</h1>
+    <p>This page tests all analytics tracking functionality. Open browser console to see events.</p>
+    
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <h4>🍪 Cookie Consent Test</h4>
+        <p>Testing cookie consent functionality...</p>
+        <button id="accept-cookies" class="btn btn-primary">Accept</button>
+        <button id="reject-cookies" class="btn btn-secondary">Reject</button>
+    </div>
+    
+    <div class="test-section">
+        <h3>CTA Button Tests</h3>
+        <button class="btn btn-primary" onclick="trackEvent('cta_click', {action: 'Test Primary CTA', section: 'test'})">Primary CTA</button>
+        <button class="btn btn-secondary" onclick="trackEvent('cta_click', {action: 'Test Secondary CTA', section: 'test'})">Secondary CTA</button>
+    </div>
+    
+    <div class="test-section">
+        <h3>Form Submission Test</h3>
+        <form onsubmit="trackEvent('form_submit', {form_type: 'test_form', has_email: true}); return false;">
+            <div class="form-group">
+                <input type="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <textarea placeholder="Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit Form</button>
+        </form>
+    </div>
+    
+    <div class="test-section">
+        <h3>Product Interaction Test</h3>
+        <div class="product-card" onclick="trackEvent('product_click', {product: 'Test Product', section: 'test'})" style="padding: 20px; border: 1px solid #ddd; cursor: pointer;">
+            <h4>Test Product</h4>
+            <p>Click to test product interaction tracking</p>
+        </div>
+    </div>
+    
+    <div class="test-section">
+        <h3>Newsletter Signup Test</h3>
+        <form onsubmit="trackEvent('newsletter_signup', {email_domain: 'test.com', has_consent: true}); return false;">
+            <input type="email" placeholder="Email" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+    </div>
+    
+    <div class="test-section">
+        <h3>Resource Download Test</h3>
+        <a href="#" onclick="trackEvent('resource_download', {resource_type: 'PDF', resource_name: 'Test Whitepaper'}); return false;" class="btn btn-secondary">Download Test PDF</a>
+    </div>
+    
+    <div class="test-section">
+        <h3>Video Play Test</h3>
+        <button onclick="trackEvent('video_play', {video_title: 'Test Video', video_source: 'youtube'})" class="btn btn-primary">Play Test Video</button>
+    </div>
+    
+    <div class="test-section">
+        <h3>Webinar Registration Test</h3>
+        <button onclick="trackEvent('webinar_registration', {webinar_title: 'Test Webinar', registration_source: 'test'})" class="btn btn-primary">Register for Test Webinar</button>
+    </div>
+    
+    <div class="test-section">
+        <h3>Scroll Depth Test</h3>
+        <p>Scroll down to test scroll depth tracking...</p>
+        <div style="height: 1000px; background: linear-gradient(to bottom, #f0f0f0, #e0e0e0); padding: 20px;">
+            <p>Scroll to 25% - 50% - 75% - 100% to test tracking</p>
+            <p>Check console for scroll depth events</p>
+        </div>
+    </div>
+    
+    <div class="test-section">
+        <h3>Manual Event Tests</h3>
+        <button onclick="trackEvent('test_event', {custom_param: 'test_value'})" class="btn btn-secondary">Test Custom Event</button>
+        <button onclick="trackEvent('user_engagement', {engagement_score: 10, interaction_type: 'test'})" class="btn btn-secondary">Test Engagement</button>
+    </div>
+    
+    <script>
+        // Cookie consent management
+        const cookieBanner = document.getElementById('cookie-banner');
+        const acceptBtn = document.getElementById('accept-cookies');
+        const rejectBtn = document.getElementById('reject-cookies');
+        
+        let analyticsEnabled = localStorage.getItem('analytics-enabled') !== 'false';
+        
+        if (!localStorage.getItem('cookie-consent')) {
+            setTimeout(() => cookieBanner.style.display = 'block', 1000);
+        } else {
+            cookieBanner.style.display = 'none';
+        }
+        
+        acceptBtn.addEventListener('click', function() {
+            localStorage.setItem('cookie-consent', 'accepted');
+            localStorage.setItem('analytics-enabled', 'true');
+            analyticsEnabled = true;
+            cookieBanner.style.display = 'none';
+            trackEvent('cookie_consent', {action: 'accepted', consent_type: 'analytics'});
+        });
+        
+        rejectBtn.addEventListener('click', function() {
+            localStorage.setItem('cookie-consent', 'rejected');
+            localStorage.setItem('analytics-enabled', 'false');
+            analyticsEnabled = false;
+            cookieBanner.style.display = 'none';
+            trackEvent('cookie_consent', {action: 'rejected', consent_type: 'analytics'});
+        });
+        
+        // Override trackEvent to respect consent
+        const originalTrackEvent = window.trackEvent;
+        window.trackEvent = function(eventName, properties = {}) {
+            if (!analyticsEnabled) {
+                console.log('Analytics disabled - event not tracked:', eventName, properties);
+                return;
+            }
+            originalTrackEvent(eventName, properties);
+        };
+        
+        // Scroll depth tracking
+        let maxScrollDepth = 0;
+        window.addEventListener('scroll', function() {
+            const scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+            if (scrollPercent > maxScrollDepth) {
+                maxScrollDepth = scrollPercent;
+                if (maxScrollDepth >= 25 && maxScrollDepth < 50) {
+                    trackEvent('scroll_depth', {depth: '25%'});
+                } else if (maxScrollDepth >= 50 && maxScrollDepth < 75) {
+                    trackEvent('scroll_depth', {depth: '50%'});
+                } else if (maxScrollDepth >= 75 && maxScrollDepth < 100) {
+                    trackEvent('scroll_depth', {depth: '75%'});
+                } else if (maxScrollDepth >= 100) {
+                    trackEvent('scroll_depth', {depth: '100%'});
+                }
+            }
+        });
+        
+        // Time on page tracking
+        let startTime = Date.now();
+        window.addEventListener('beforeunload', function() {
+            const timeOnPage = Math.round((Date.now() - startTime) / 1000);
+            trackEvent('time_on_page', {seconds: timeOnPage, minutes: Math.round(timeOnPage / 60)});
+        });
+        
+        // Initial page view
+        trackEvent('page_view', {
+            page_title: document.title,
+            page_location: window.location.href
+        });
+        
+        console.log('Analytics test page loaded. Check console for tracking events.');
+        console.log('Analytics enabled:', analyticsEnabled);
+    </script>
+</body>
+</html> 

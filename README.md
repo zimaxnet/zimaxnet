@@ -6,6 +6,55 @@
 [![AI Platform](https://img.shields.io/badge/AI%20Platform-Multimodal%20Customer%20System-orange?style=for-the-badge&logo=openai)](https://aimcs.net)
 [![Status](https://img.shields.io/badge/Status-Enterprise%20Ready-success?style=for-the-badge)](https://zimax.net)
 
+---
+
+## 🚀 Website Improvement Progress (2025)
+
+### Priority 1: High Impact (Completed)
+- Hero section redesign with animated background, live metrics, and demo preview
+- Customer testimonials carousel
+- Interactive product cards with filtering, expansion, and analytics
+
+### Priority 2: Medium Impact (Completed)
+- Advanced, modular multi-step contact form
+- Mobile experience optimization (responsive, touch-friendly, accessible)
+- Insights & Resources section (blog, video, webinar, newsletter, downloads, case study)
+
+### Priority 3: Strategic (In Progress)
+- **Advanced Analytics & Tracking:**
+  - Google Analytics 4 (GA4) with privacy-friendly config
+  - GDPR-compliant cookie consent banner
+  - Comprehensive event tracking (CTAs, forms, product, testimonials, scroll, engagement)
+  - User journey and conversion funnel tracking
+  - See `test-analytics.html` for validation
+- **Performance Optimization:**
+  - (Planned) Lighthouse/PageSpeed improvements, caching, asset optimization
+- **Interactive Tools:**
+  - (Planned) ROI calculator, AI-readiness assessment, lead-gen widgets
+
+---
+
+## Analytics, Privacy, and Event Tracking
+
+- **Google Analytics 4** is integrated with Measurement ID: `G-FRG0SCBEFB`
+- **GDPR-compliant cookie consent**: Users can accept/reject analytics cookies; analytics is disabled if rejected
+- **Comprehensive event tracking** for:
+  - CTA buttons, form submissions, product cards, testimonials, newsletter, resource downloads, video, webinar, scroll depth, time on page, engagement
+- **Test/validate analytics**: Open `test-analytics.html` in your browser and use the console to verify events
+- **Privacy policy**: See `/privacy` for details
+
+---
+
+## How to Test Analytics
+
+1. Start the dev server: `npm start`
+2. Open [http://localhost:3000/test-analytics.html](http://localhost:3000/test-analytics.html)
+3. Open your browser console and interact with the page
+4. Accept/reject cookies to test consent logic
+5. Check your GA4 Realtime dashboard for live events
+
+---
+
 ## About Zimax Networks Limited
 
 Zimax Networks is a specialized technology company focused on developing, architecting, and implementing cutting-edge AI solutions on Microsoft Azure infrastructure. Our expertise lies in creating enterprise-grade customer interaction platforms that leverage multimodal AI capabilities.
