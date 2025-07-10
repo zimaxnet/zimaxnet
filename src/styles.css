@@ -1897,6 +1897,7 @@ footer {
 
 /* Flyout Left Navigation */
 .flyout-menu-btn {
+  display: none; /* Hidden by default, shown on mobile */
   position: fixed;
   top: 24px;
   left: 24px;
@@ -1911,6 +1912,22 @@ footer {
   cursor: pointer;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   transition: background 0.2s;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flyout-menu-btn span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: white;
+  margin: 2px 0;
+  transition: all 0.3s ease;
+}
+
+.flyout-menu-btn:hover span {
+  background: #f0f8ff;
 }
 .flyout-menu-btn:hover { background: #764ba2; }
 
