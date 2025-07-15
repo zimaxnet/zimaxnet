@@ -7,6 +7,165 @@
     box-sizing: border-box;
 }
 
+/* Content Section Styles */
+.content-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.content-section .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: #333;
+    font-weight: 700;
+}
+
+.info-card {
+    background: #f8f9fa;
+    padding: 2.5rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    border-left: 4px solid #667eea;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.info-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.info-card p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.info-card p:last-of-type {
+    margin-bottom: 2rem;
+}
+
+.action-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.action-links .btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.95rem;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.info-item {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border-left: 3px solid #667eea;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.info-item h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.info-item p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.notice-section {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.notice-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+.notice-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: white;
+    font-weight: 600;
+}
+
+.notice-card p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.notice-card em {
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-info {
+    padding: 60px 0;
+    background: #f8f9fa;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer-info .footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-info .footer-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.footer-info .footer-section p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.service-notice {
+    text-align: center;
+    padding: 1.5rem;
+    background: rgba(102, 126, 234, 0.1);
+    border-radius: 10px;
+    border: 1px solid rgba(102, 126, 234, 0.2);
+}
+
+.service-notice p {
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0;
+}
+
 /* Breadcrumb Navigation */
 .breadcrumb-nav {
     background: rgba(255, 255, 255, 0.95);
@@ -2433,3 +2592,117 @@ footer {
     overflow-x: hidden;
   }
 } 
+
+/* Mobile responsive for new AIMCS sections */
+@media (max-width: 768px) {
+  .content-section {
+    padding: 40px 0;
+  }
+  
+  .content-section .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .info-card {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .info-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .info-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .action-links {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  
+  .action-links .btn {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .info-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .info-item {
+    padding: 1.2rem;
+  }
+  
+  .notice-section {
+    padding: 40px 0;
+  }
+  
+  .notice-card {
+    padding: 1.5rem;
+  }
+  
+  .notice-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .notice-card p {
+    font-size: 1rem;
+  }
+  
+  .footer-info {
+    padding: 40px 0;
+  }
+  
+  .footer-info .footer-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .footer-info .footer-section h3 {
+    font-size: 1.2rem;
+  }
+  
+  .service-notice {
+    padding: 1rem;
+  }
+  
+  .service-notice p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .content-section .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .info-card {
+    padding: 1.2rem;
+  }
+  
+  .info-card h3 {
+    font-size: 1.2rem;
+  }
+  
+  .info-item {
+    padding: 1rem;
+  }
+  
+  .info-item h4 {
+    font-size: 1.1rem;
+  }
+  
+  .notice-card {
+    padding: 1.2rem;
+  }
+  
+  .notice-card h3 {
+    font-size: 1.3rem;
+  }
+}
