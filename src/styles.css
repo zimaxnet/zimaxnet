@@ -1354,8 +1354,8 @@ nav {
     line-height: 1.6;
 }
 
-/* AIMCS Showcase */
-.aimcs-showcase {
+/* Orb Game Showcase */
+.orb-game-showcase {
     padding: 80px 0;
     background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
     color: white;
@@ -2059,7 +2059,7 @@ footer {
 /* Print Styles */
 @media print {
     .hero,
-    .aimcs-showcase,
+    .orb-game-showcase,
     .cta-section {
         background: white !important;
         color: black !important;
@@ -2593,7 +2593,7 @@ footer {
   }
 } 
 
-/* Mobile responsive for new AIMCS sections */
+/* Mobile responsive for new Orb Game sections */
 @media (max-width: 768px) {
   .content-section {
     padding: 40px 0;

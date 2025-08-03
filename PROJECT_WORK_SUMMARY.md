@@ -49,7 +49,7 @@
 
 #### 4. **Content & Product Portfolio**
 - **Complete Product Suite**: 20+ Azure AI and cloud services
-  - AIMCS Platform (main product)
+  - Orb Game Platform (main product)
   - Azure AI Foundry
   - Azure Container Platform
   - Azure Networking & Security
@@ -146,7 +146,7 @@ gtag('config', 'G-FRG0SCBEFB', {
 ## 📋 Content Strategy
 
 ### **Product Portfolio**
-1. **AIMCS Platform** - Main AI customer interaction platform
+1. **Orb Game Platform** - Main AI-powered educational platform
 2. **Azure AI Foundry** - AI model development and deployment
 3. **Azure Container Platform** - Container orchestration and management
 4. **Azure Networking & Security** - Cloud security and networking

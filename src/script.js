@@ -211,7 +211,7 @@ function showSuccess(form, message) {
 
 function getSectionFromElement(element) {
     // Determine which section the element is in
-    const sections = ['hero', 'features', 'aimcs', 'services', 'contact'];
+    const sections = ['hero', 'features', 'orb-game-showcase', 'services', 'contact'];
     for (const section of sections) {
         if (element.closest(`#${section}`) || element.closest(`.${section}`)) {
             return section;

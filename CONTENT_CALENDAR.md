@@ -26,7 +26,7 @@ This document outlines the comprehensive content calendar and implementation fra
 **Content Structure**:
 1. **Hero Section**: "Transform Customer Interactions with Azure-Native AI"
 2. **Value Proposition**: Multimodal customer AI expertise
-3. **AIMCS Showcase**: Live platform demonstration
+3. **Orb Game Showcase**: Live platform demonstration
 4. **Technical Architecture**: Azure infrastructure deep-dive
 5. **ROI Calculator**: Customer AI implementation benefits
 6. **Case Studies**: Success stories and metrics
@@ -42,20 +42,20 @@ This document outlines the comprehensive content calendar and implementation fra
 1. **What is Multimodal Customer AI?**
 2. **Azure AI Services for Customer Interaction**
 3. **Technical Implementation Overview**
-4. **AIMCS as Real-World Example**
+4. **Orb Game as Real-World Example**
 5. **Benefits and Use Cases**
 6. **Getting Started Guide**
 
 ### Week 2: Technical Deep-Dive
 
-#### Service Page: "AIMCS Platform - AI Multimodal Customer System"
-**URL**: `/aimcs-platform`  
+#### Service Page: "Orb Game Platform - AI-Powered Educational System"
+**URL**: `/orb-game-platform`  
 **Target Keywords**: "Azure AI Foundry customer platform", "multimodal customer AI solutions"  
 **Content Type**: Product demonstration page  
 **Word Count**: 2,000-2,500 words  
 
 **Content Structure**:
-1. **Platform Overview**: What is AIMCS?
+1. **Platform Overview**: What is Orb Game?
 2. **Multimodal Capabilities**: Voice, text, image, video
 3. **Technical Architecture**: Azure infrastructure details
 4. **Live Demo**: Interactive platform showcase
@@ -63,14 +63,14 @@ This document outlines the comprehensive content calendar and implementation fra
 6. **Implementation Guide**: How to deploy similar systems
 7. **Pricing and Plans**: Enterprise solutions
 
-#### Technical Blog Post: "AIMCS Architecture: Building Customer AI at Scale"
-**URL**: `/blog/aimcs-architecture-building-customer-ai-scale`  
+#### Technical Blog Post: "Orb Game Architecture: Building Educational AI at Scale"
+**URL**: `/blog/orb-game-architecture-building-educational-ai-scale`  
 **Target Keywords**: "Azure web apps AI customer portal", "customer AI conversation memory"  
 **Content Type**: Technical architecture deep-dive  
 **Word Count**: 2,000-2,500 words  
 
 **Content Structure**:
-1. **System Overview**: AIMCS architecture principles
+1. **System Overview**: Orb Game architecture principles
 2. **Frontend Architecture**: React with multimodal components
 3. **Backend Services**: Node.js and Azure integration
 4. **Database Design**: Cosmos DB for conversation persistence
@@ -144,7 +144,7 @@ This document outlines the comprehensive content calendar and implementation fra
 4. **Client Integration**: Connecting to enterprise systems
 5. **Security Considerations**: Authentication and authorization
 6. **Performance Optimization**: Efficient data exchange
-7. **Real-World Examples**: AIMCS MCP implementations
+7. **Real-World Examples**: Orb Game educational implementations
 
 ### Week 5: Performance and Optimization
 
@@ -235,14 +235,14 @@ This document outlines the comprehensive content calendar and implementation fra
 
 ### Week 9: Case Studies
 
-#### Case Study: "AIMCS Development Journey"
-**URL**: `/case-studies/aimcs-development-journey`  
+#### Case Study: "Orb Game Development Journey"
+**URL**: `/case-studies/orb-game-development-journey`  
 **Target Keywords**: "customer AI case study", "Azure AI implementation"  
 **Content Type**: Technical case study  
 **Word Count**: 2,500-3,000 words  
 
 **Content Structure**:
-1. **Project Overview**: AIMCS development goals
+1. **Project Overview**: Orb Game development goals
 2. **Technical Challenges**: Architecture and implementation hurdles
 3. **Solutions Developed**: Innovative approaches and solutions
 4. **Performance Results**: Metrics and improvements
