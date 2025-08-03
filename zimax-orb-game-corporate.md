@@ -1,81 +1,97 @@
-# Zimax Networks - Revolutionary AI-Powered Educational Technology
+# 🚀 Orb Game: Revolutionizing AI-Powered Historical Education
 
-[![Website](https://img.shields.io/badge/Website-zimax.net-blue?style=for-the-badge&logo=azure)](https://zimax.net)
-[![Live Platform](https://img.shields.io/badge/Live%20Platform-Orb%20Game-green?style=for-the-badge&logo=robot)](https://orbgame.us)
-[![Documentation](https://img.shields.io/badge/Documentation-Wiki%20Orb%20Game-orange?style=for-the-badge&logo=book)](https://wiki.orbgame.us)
-[![API](https://img.shields.io/badge/API-Orb%20Game%20API-purple?style=for-the-badge&logo=api)](https://api.orbgame.us)
-[![Status](https://img.shields.io/badge/Status-Production%20Ready-success?style=for-the-badge)](https://orbgame.us)
+## Executive Summary
 
----
+**Zimax AI Labs** is proud to announce the complete transformation of **Orb Game** - an advanced AI-powered interactive gaming platform that has evolved from a simple news discovery tool into a sophisticated educational experience focused on historical figure discovery and learning.
 
-## 🚀 Orb Game: Revolutionizing AI-Powered Historical Education
+## 🎯 Mission & Vision
 
-**Zimax AI Labs** presents **Orb Game** - the world's most sophisticated AI-powered educational platform for discovering and learning about influential historical figures through interactive 3D exploration, advanced AI content generation, and culturally sensitive bilingual experiences.
+### **Mission**
+To create the world's most engaging AI-powered platform for discovering and learning about influential historical figures through interactive 3D exploration, advanced AI content generation, and culturally sensitive bilingual experiences.
 
-### 🌟 Revolutionary AI-Powered Features
+### **Vision**
+To democratize access to historical knowledge by leveraging cutting-edge AI technology to make learning about historical figures engaging, educational, and accessible to users worldwide.
 
-#### **🤖 Enhanced Prompting System Revolution**
-**Industry-First Achievement**: Orb Game features the world's most sophisticated prompting system for AI-powered educational content.
+## 🌟 Revolutionary AI-Powered Features
 
-- **180+ Model-Specific Prompts**: 4 AI models (o4-mini, grok-4, perplexity-sonar, gemini-1.5-flash)
+### **🤖 Enhanced Prompting System Revolution**
+**Industry-First Achievement**: Orb Game now features the world's most sophisticated prompting system for AI-powered educational content.
+
+#### **180+ Model-Specific Prompts**
+- **4 AI Models**: o4-mini, grok-4, perplexity-sonar, gemini-1.5-flash
 - **8 Categories**: Technology, Science, Art, Nature, Sports, Music, Space, Innovation
 - **5 Historical Epochs**: Ancient, Medieval, Industrial, Modern, Future
 - **2 Languages**: English and Spanish with cultural sensitivity
 - **Total Coverage**: 320 unique prompt combinations
 
-#### **🌍 Bilingual Excellence**
+#### **Model-Specific Intelligence**
+Each AI model leverages its unique strengths:
+- **🔬 o4-mini**: Systematic, analytical, logical reasoning for educational content
+- **🎭 grok-4**: Witty, creative, unconventional perspectives for engaging storytelling
+- **📊 perplexity-sonar**: Data-driven, research-based, authoritative information
+- **🌟 gemini-1.5-flash**: Multi-perspective, immersive narratives for rich storytelling
+
+### **🌍 Bilingual Excellence**
 **Cultural Sensitivity**: Spanish content is culturally appropriate, not just translations.
 - **360 Total Prompts**: 180 English + 180 Spanish sophisticated prompts
 - **Natural Language**: Feels natural and engaging for Spanish speakers
 - **Cultural Context**: Appropriate for Spanish-speaking users worldwide
 - **Seamless Switching**: Instant language toggle with automatic content refresh
 
-#### **🎮 Interactive 3D Experience**
+### **🎮 Interactive 3D Experience**
 **Immersive Learning**: 3D space environment with orbiting "orbs" representing different categories.
 - **5,000 Animated Stars**: Milky Way background for immersive experience
 - **Drag & Drop Interaction**: Intuitive orb manipulation
 - **Real-time Story Generation**: AI-powered content creation
 - **Audio Narration**: Text-to-speech brings stories to life
 
-### 📊 Technical Excellence
+## 📊 Technical Excellence
 
-#### **🏗️ Advanced Architecture**
+### **🏗️ Advanced Architecture**
 - **Frontend**: React 19.x with Three.js for 3D graphics
 - **Backend**: Node.js with Azure OpenAI integration
 - **Database**: Azure Cosmos DB for MongoDB with 240+ pre-populated stories
 - **Deployment**: Azure Web App + Container Apps with automated CI/CD
 
-#### **🔧 API Optimization**
+### **🔧 API Optimization**
 - **23% Reduction**: Streamlined from 26 to 20 optimized endpoints
 - **Enhanced Performance**: Faster startup and reduced maintenance overhead
 - **Improved Maintainability**: Single source of truth for each function
 - **100% Compatibility**: All frontend integrations working perfectly
 
-#### **🖼️ Image System Innovation**
+### **🖼️ Image System Innovation**
 - **201 Real Images**: Historical figure images via Google Custom Search API
 - **Multiple Image Types**: Portraits, achievements, inventions, artifacts
 - **Intelligent Fallback**: Clean text display when images unavailable
 - **Bilingual Support**: Images display correctly with Spanish content
 
-### 🎯 Educational Impact
+## 🎯 Educational Impact
 
-#### **📚 Learn More Functionality**
+### **📚 Learn More Functionality**
 **Comprehensive Historical Information**: Each historical figure story includes a "Learn More" button that generates detailed, model-specific information.
 
+#### **Enhanced Content Generation**
 - **500-600 Words**: Detailed, comprehensive information
 - **7 Key Areas**: Early life, achievements, historical context, impact, anecdotes, innovations, legacy
 - **Specific Details**: Dates, facts, historical details
 - **Cultural Sensitivity**: Appropriate content for different languages
 
-#### **🌍 Global Accessibility**
+#### **Model-Specific Learn More Prompts**
+Each AI model provides unique perspectives on historical figures:
+- **o4-mini**: Systematic analysis with definitive conclusions
+- **grok-4**: Witty, entertaining content with memorable analogies
+- **perplexity-sonar**: Research-based, authoritative information with real data
+- **gemini-1.5-flash**: Rich, multi-perspective narratives with emotional resonance
+
+### **🌍 Global Accessibility**
 - **Bilingual Support**: Full English and Spanish experience
 - **Cultural Sensitivity**: Appropriate content for different regions
 - **Mobile Responsive**: Works seamlessly on desktop and mobile devices
 - **Accessibility Features**: Audio controls and keyboard navigation
 
-### 📈 Performance Metrics
+## 📈 Performance Metrics
 
-#### **✅ Quality Assurance Results**
+### **✅ Quality Assurance Results**
 - **Total Prompts**: 320 (100% validated)
 - **Learn More Prompts**: 8/8 models working perfectly
 - **Bilingual Support**: 100% complete
@@ -83,32 +99,46 @@
 - **Image System**: 201 real historical figure images
 - **Spanish Audio**: Professional TTS with 125KB-683KB audio generation
 
-### 🏆 Industry Recognition
+### **🚀 User Experience Improvements**
+- **More Engaging Content**: Model-specific prompts create richer stories
+- **Better Historical Accuracy**: Sophisticated prompts ensure accurate representation
+- **Improved Learn More**: Detailed, model-specific information
+- **Consistent Quality**: Centralized management ensures uniform high quality
+- **Cultural Sensitivity**: Appropriate content for different languages
 
-#### **🎯 First-of-its-Kind Achievements**
+## 🏆 Industry Recognition
+
+### **🎯 First-of-its-Kind Achievements**
 1. **Model-Specific Educational Prompts**: Industry-first sophisticated prompting system for AI-powered education
 2. **Bilingual Cultural Sensitivity**: Spanish content that feels natural, not translated
 3. **Interactive 3D Historical Learning**: Unique combination of 3D graphics and AI-powered education
 4. **Comprehensive Historical Figure Database**: 240+ pre-populated stories with real images
 
----
+### **🔬 Technical Innovation**
+- **Advanced Prompt Management**: Centralized system with 320 unique prompt combinations
+- **AI Model Optimization**: Leveraging each model's unique strengths for educational content
+- **Real-time Content Generation**: Dynamic story creation with historical accuracy
+- **Cultural Intelligence**: Appropriate content generation for different regions
 
-## 🌐 Live Platforms
+## 🌍 Global Impact
 
-### **Primary Platform**
-- **Orb Game**: [https://orbgame.us](https://orbgame.us)
-- **API Endpoint**: [https://api.orbgame.us](https://api.orbgame.us)
-- **Documentation**: [https://wiki.orbgame.us](https://wiki.orbgame.us)
-- **GitHub Repository**: [https://github.com/zimaxnet/orb-game](https://github.com/zimaxnet/orb-game)
+### **📚 Educational Value**
+- **Historical Accuracy**: Sophisticated prompts ensure accurate historical representation
+- **Engaging Learning**: Interactive 3D experience makes learning fun
+- **Comprehensive Information**: Detailed stories with "Learn More" functionality
+- **Cultural Sensitivity**: Appropriate content for different regions and languages
 
-### **Technology Stack**
-- **Frontend**: React 19.x, Three.js, Vite
-- **Backend**: Node.js, Express, Azure OpenAI
-- **Database**: Azure Cosmos DB for MongoDB
-- **Deployment**: Azure Web App, Container Apps, GitHub Actions
-- **AI Models**: o4-mini, grok-4, perplexity-sonar, gemini-1.5-flash
+### **🤖 AI Innovation**
+- **Model-Specific Intelligence**: Each AI model contributes its unique strengths
+- **Sophisticated Prompting**: 180+ carefully crafted prompts for optimal content
+- **Real-time Generation**: Dynamic content creation with historical accuracy
+- **Quality Assurance**: Comprehensive testing and validation of all features
 
----
+### **🌍 Global Accessibility**
+- **Bilingual Support**: Full English and Spanish experience
+- **Cultural Sensitivity**: Appropriate content for different regions
+- **Mobile Responsive**: Works seamlessly on all devices
+- **Accessibility Features**: Audio controls and keyboard navigation
 
 ## 🚀 Future Roadmap
 
@@ -129,8 +159,6 @@
 - **Educational Partnerships**: Partner with educational institutions
 - **Mobile App**: Native mobile application for enhanced experience
 
----
-
 ## 💼 Business Value
 
 ### **🎯 Market Position**
@@ -139,6 +167,13 @@
 - **Global Accessibility**: Bilingual support with cultural sensitivity
 - **Scalable Architecture**: Azure cloud infrastructure with automated deployment
 
+### **📊 Competitive Advantages**
+1. **Sophisticated AI Integration**: Model-specific prompts leveraging each AI's strengths
+2. **Interactive 3D Experience**: Unique combination of gaming and education
+3. **Bilingual Excellence**: Cultural sensitivity, not just translations
+4. **Real Historical Images**: 201 authentic historical figure images
+5. **Comprehensive Content**: 240+ pre-populated stories with detailed information
+
 ### **🌍 Target Markets**
 - **Educational Institutions**: Schools, universities, and learning centers
 - **History Enthusiasts**: Individuals interested in historical figures and events
@@ -146,14 +181,11 @@
 - **AI Technology Enthusiasts**: Users interested in cutting-edge AI applications
 - **Gaming and Education**: Users seeking engaging educational experiences
 
----
-
 ## 📞 Contact Information
 
 ### **🌐 Live Platforms**
 - **Orb Game**: [https://orbgame.us](https://orbgame.us)
 - **API Endpoint**: [https://api.orbgame.us](https://api.orbgame.us)
-- **Documentation**: [https://wiki.orbgame.us](https://wiki.orbgame.us)
 - **GitHub Repository**: [https://github.com/zimaxnet/orb-game](https://github.com/zimaxnet/orb-game)
 
 ### **🔧 Technology Stack**
@@ -162,11 +194,6 @@
 - **Database**: Azure Cosmos DB for MongoDB
 - **Deployment**: Azure Web App, Container Apps, GitHub Actions
 - **AI Models**: o4-mini, grok-4, perplexity-sonar, gemini-1.5-flash
-
-### **📧 Contact Details**
-- **Email**: [derek@zimax.net](mailto:derek@zimax.net)
-- **Phone**: [+1 (213) 254-5197](tel:+12132545197)
-- **Website**: [zimax.net](https://zimax.net)
 
 ---
 
@@ -186,57 +213,6 @@
 
 ---
 
-## 📚 Documentation & Resources
-
-### **Technical Documentation**
-- **Platform Documentation**: [wiki.orbgame.us](https://wiki.orbgame.us)
-- **API Reference**: Complete API documentation and integration guides
-- **Developer Resources**: SDKs, libraries, and development tools
-- **Educational Materials**: Tutorials, case studies, and best practices
-
-### **Repository Structure**
-- **Website**: Corporate website showcasing Orb Game as flagship product
-- **Documentation**: Comprehensive technical and educational resources
-- **API**: RESTful API for Orb Game platform integration
-- **Deployment**: Azure infrastructure and CI/CD automation
-
----
-
 *For more information about Zimax AI Labs and our innovative AI-powered solutions, visit [https://zimax.net](https://zimax.net)*
 
-**Zimax AI Labs** - *Revolutionizing AI-Powered Education* 🌍✨
-
----
-
-# Azure Front Door Security Hardening for zimax.net
-
-## Overview
-zimax.net is protected by Azure Front Door Standard/Premium, with a focus on enterprise-grade security and compliance. The configuration achieves an SSL Labs A rating and implements all modern best-practice HTTP security headers.
-
-## Key Security Features
-
-- **TLS 1.3 and 1.2 Only**: Legacy/insecure protocols are disabled. All modern browsers are supported.
-- **SSL Labs A Rating**: Confirmed by Qualys SSL Labs, including strong ciphers and certificate chain.
-- **HSTS Preloading**: `Strict-Transport-Security` header set to `max-age=63072000; includeSubDomains; preload` (2 years), making the site eligible for browser HSTS preload lists.
-- **Security Headers Implemented**:
-  - `Strict-Transport-Security`: Enforces HTTPS and enables HSTS preloading.
-  - `X-Frame-Options: DENY`: Prevents clickjacking by disallowing the site in iframes.
-  - `X-Content-Type-Options: nosniff`: Prevents MIME type sniffing.
-  - `Referrer-Policy: strict-origin-when-cross-origin`: Limits referrer data sent to other sites.
-  - `X-XSS-Protection: 1; mode=block`: Enables browser XSS filtering.
-  - `Content-Security-Policy: default-src 'self'`: Restricts resource loading to the same origin.
-
-## Implementation Details
-- **Infrastructure as Code**: All security headers and routing rules are managed via Bicep templates, ensuring repeatable, auditable, and automated deployments.
-- **Azure DevOps Automation**: Bicep deployments are integrated into the CI/CD pipeline for zero-touch security updates.
-- **Continuous Monitoring**: SSL Labs and securityheaders.com are used to validate configuration after every deployment.
-
-## Why This Matters
-- **Compliance**: Meets or exceeds requirements for GDPR, SOC2, and enterprise procurement.
-- **User Trust**: Modern browsers show a secure padlock and block mixed content or insecure requests.
-- **SEO**: Google and other search engines reward secure, well-configured sites.
-
-## References
-- [SSL Labs Report for zimax.net](https://www.ssllabs.com/ssltest/analyze.html?d=zimax.net)
-- [securityheaders.com Results](https://securityheaders.com/?q=zimax.net)
-- [Azure Front Door Documentation](https://learn.microsoft.com/en-us/azure/frontdoor/)
+**Zimax AI Labs** - *Revolutionizing AI-Powered Education* 🌍✨ 
