@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Comparative Research Paper on 2025 AI Video Tools</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --accent: #4f46e5;
+    --text: #0f172a;
+    --muted: #475569;
+    --bg: #ffffff;
+    --border: #e2e8f0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --bg: #0b1220;
+      --border: #1f2937;
+    }
+  }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+    line-height: 1.6;
+    color: var(--text);
+    background: radial-gradient(1200px 800px at 10% -10%, rgba(79,70,229,0.06), transparent 60%), var(--bg);
+  }
+  .container {
+    max-width: 980px;
+    margin: 48px auto;
+    padding: 0 20px 64px;
+  }
+  header {
+    margin-bottom: 28px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+  }
+  h1 {
+    font-size: 2.2rem;
+    line-height: 1.25;
+    margin: 0 0 8px 0;
+    letter-spacing: 0.2px;
+  }
+  .subhead {
+    color: var(--muted);
+    font-size: 0.98rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+    margin-top: 36px;
+    border-left: 4px solid var(--accent);
+    padding-left: 12px;
+  }
+  h3 { font-size: 1.2rem; margin-top: 24px; }
+  p { margin: 10px 0; }
+  ul { margin: 6px 0 16px 20px; }
+  ol { margin: 6px 0 16px 20px; }
+  .callout {
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--accent);
+    padding: 12px 14px;
+    border-radius: 10px;
+    background: rgba(79,70,229,0.06);
+    margin: 16px 0 24px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0 24px;
+    font-size: 0.98rem;
+  }
+  th, td {
+    border: 1px solid var(--border);
+    padding: 10px 12px;
+    vertical-align: top;
+  }
+  th { text-align: left; background: rgba(79,70,229,0.07); }
+  .muted { color: var(--muted); }
+  footer {
+    margin-top: 48px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+    font-size: 0.95rem;
+    color: var(--muted);
+  }
+  .tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: rgba(79,70,229,0.12);
+    color: var(--accent);
+    font-size: 0.86rem;
+    margin-right: 6px;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <!-- Navigation Back to Research Index -->
+    <nav class="breadcrumb-nav" style="margin-bottom: 2rem;">
+      <a href="index.html" style="color: var(--accent); text-decoration: none; font-weight: 500;">← Back to Research & Insights</a>
+    </nav>
+    <header>
+      <h1>Comparative Research Paper on 2025 AI Video Tools</h1>
+      <div class="subhead">Runway Gen‑4, Kling, OpenAI Sora, HeyGen, Synthesia, Seedream, Hailuo AI, “Nano‑Banana”, and Google Veo</div>
+      <div class="subhead">Prepared: <strong>August 19, 2025</strong></div>
+    </header>
+
+    <section id="abstract">
+      <h2>Abstract</h2>
+      <p>
+        This paper surveys nine prominent AI video (and closely related image‑to‑video) systems shaping 2025. We synthesize vendor documentation with third‑party tests and community feedback to assess strengths, accessibility, and practical trade‑offs. In summary: <em>Runway Gen‑4</em> emphasizes stylized cinematics; <em>Kling</em> is praised for realistic motion and 1080p output; <em>Sora</em> excels at complex scene physics but suffers from access constraints; <em>HeyGen</em> and <em>Synthesia</em> dominate multilingual talking‑head production; <em>Seedream</em> stands out for portrait realism and micro‑expressions; <em>Hailuo AI</em> is noted for rapid iteration and prompt adherence; “<em>Nano‑Banana</em>” is experimental but striking for stability; and <em>Google Veo</em> advances native audio+video with broad API access.
+      </p>
+    </section>
+
+    <section id="methodology">
+      <h2>Methodology</h2>
+      <ul>
+        <li><strong>Primary sources:</strong> Official product pages, technical blogs, and documentation.</li>
+        <li><strong>Secondary sources:</strong> Tech press hands‑on articles, developer posts, and YouTube reviews.</li>
+        <li><strong>User feedback:</strong> Community forums (e.g., Reddit), and business‑software review sites (e.g., G2/Capterra).</li>
+      </ul>
+      <div class="callout">
+        We prioritize 2024–2025 sources and clearly mark contested or anecdotal claims.
+      </div>
+    </section>
+
+    <section id="profiles">
+      <h2>Tool Profiles</h2>
+
+      <h3>Runway Gen‑4</h3>
+      <ul>
+        <li><strong>Positioning:</strong> Stylized, cinematic visuals with character/scene consistency and physics‑aware effects.</li>
+        <li><strong>Comments &amp; Reviews:</strong> Praised for creative looks; mixed reports on queue times and motion stability for certain prompts.</li>
+      </ul>
+
+      <h3>Kling (Kuaishou)</h3>
+      <ul>
+        <li><strong>Positioning:</strong> Realistic motion modeling, 1080p output, ~30&nbsp;fps; strong spatiotemporal coherence.</li>
+        <li><strong>Comments &amp; Reviews:</strong> Users highlight fluid movement and color consistency; trade‑offs in speed/credits.</li>
+      </ul>
+
+      <h3>OpenAI Sora</h3>
+      <ul>
+        <li><strong>Positioning:</strong> Complex multi‑element scenes with coherent physics and composition.</li>
+        <li><strong>Comments &amp; Reviews:</strong> Highly regarded capabilities; access availability and regional rollout are common pain points.</li>
+      </ul>
+
+      <h3>HeyGen</h3>
+      <ul>
+        <li><strong>Positioning:</strong> Talking‑head/avatar videos with multilingual lip‑sync and enterprise‑friendly workflows.</li>
+        <li><strong>Comments &amp; Reviews:</strong> Positive for ease‑of‑use and localization; rendering throughput can bottleneck at scale.</li>
+      </ul>
+
+      <h3>Synthesia</h3>
+      <ul>
+        <li><strong>Positioning:</strong> Enterprise‑oriented multilingual avatars with strong adoption in L&amp;D and corporate comms.</li>
+        <li><strong>Comments &amp; Reviews:</strong> Praised for simplicity and scalability; some constraints on layout and fine‑grained control.</li>
+      </ul>
+
+      <h3>Seedream (ByteDance)</h3>
+      <ul>
+        <li><strong>Positioning:</strong> High‑fidelity portraits emphasizing micro‑expressions/skin detail; often used in video pipelines (e.g., CapCut).</li>
+        <li><strong>Comments &amp; Reviews:</strong> Noted for nuanced faces; primarily an image model rather than end‑to‑end video.</li>
+      </ul>
+
+      <h3>Hailuo AI (MiniMax)</h3>
+      <ul>
+        <li><strong>Positioning:</strong> Fast, accessible generation with strong prompt‑adherence and playful physics effects.</li>
+        <li><strong>Comments &amp; Reviews:</strong> Good for rapid iteration; free tiers may watermark or limit clip length.</li>
+      </ul>
+
+      <h3>“Nano‑Banana” (Experimental)</h3>
+      <ul>
+        <li><strong>Positioning:</strong> Community‑discovered model (via LM Arena/LMSYS) praised for lighting consistency and character stability.</li>
+        <li><strong>Comments &amp; Reviews:</strong> Experimental; unofficial pedigree and sporadic access—use with caution.</li>
+      </ul>
+
+      <h3>Google Veo</h3>
+      <ul>
+        <li><strong>Positioning:</strong> State‑of‑the‑art video generation with native audio support, SynthID watermarking, and API/Vertex access.</li>
+        <li><strong>Comments &amp; Reviews:</strong> Early GA reports cite strong creativity and speed but variable fidelity and daily caps.</li>
+      </ul>
+    </section>
+
+    <section id="findings">
+      <h2>Cross‑Tool Findings (2025)</h2>
+      <ol>
+        <li><strong>Realism &amp; Motion:</strong> Kling and Hailuo are frequently praised for fluid motion at accessible price points; Veo pushes realism with synchronized audio and broad API availability.</li>
+        <li><strong>Complex Scene Composition:</strong> Sora stands out for multi‑element scenes and coherent physics, though access remains limited.</li>
+        <li><strong>Talking‑Head at Scale:</strong> HeyGen and Synthesia dominate multilingual avatars for training and communications.</li>
+        <li><strong>Style &amp; Aesthetics:</strong> Runway Gen‑4 is strong for stylized, cinematic looks; some users note stability trade‑offs in specific prompts.</li>
+        <li><strong>Portrait Nuance:</strong> Seedream’s facial realism benefits character asset creation within video pipelines.</li>
+        <li><strong>Experimental Models:</strong> “Nano‑Banana” is impressive in demos but lacks official documentation.</li>
+      </ol>
+    </section>
+
+    <section id="reviews-table">
+      <h2>Reviewer &amp; User Comment Snapshots</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Tool</th>
+            <th>Positive Themes</th>
+            <th>Critical Themes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Runway Gen‑4</td>
+            <td>Consistency features; cinematic style</td>
+            <td>Queue times; occasional unstable motion</td>
+          </tr>
+          <tr>
+            <td>Kling</td>
+            <td>Realistic motion; 1080p output</td>
+            <td>Credit costs; speed trade‑offs</td>
+          </tr>
+          <tr>
+            <td>OpenAI Sora</td>
+            <td>Complex scenes; coherent physics</td>
+            <td>Limited access; regional availability</td>
+          </tr>
+          <tr>
+            <td>HeyGen</td>
+            <td>Ease of use; multilingual lip‑sync</td>
+            <td>Rendering throughput at scale</td>
+          </tr>
+          <tr>
+            <td>Synthesia</td>
+            <td>Enterprise workflows; scalability</td>
+            <td>Layout/control constraints</td>
+          </tr>
+          <tr>
+            <td>Seedream</td>
+            <td>Micro‑expressions; skin realism</td>
+            <td>Image‑first (not full video)</td>
+          </tr>
+          <tr>
+            <td>Hailuo AI</td>
+            <td>Prompt‑adherence; fast iteration</td>
+            <td>Watermarks/clip length on free tiers</td>
+          </tr>
+          <tr>
+            <td>“Nano‑Banana”</td>
+            <td>Lighting and character stability</td>
+            <td>Unofficial; sporadic access</td>
+          </tr>
+          <tr>
+            <td>Google Veo</td>
+            <td>Native audio; API/Vertex access</td>
+            <td>Daily caps; variable fidelity</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="recommendations">
+      <h2>Practical Recommendations</h2>
+      <ul>
+        <li><span class="tag">Cinematic set‑pieces &amp; pre‑viz</span> Use <strong>OpenAI Sora</strong> (where available) or <strong>Google Veo</strong>; for stylized looks, <strong>Runway Gen‑4</strong>.</li>
+        <li><span class="tag">Realistic character motion</span> Choose <strong>Kling</strong> or <strong>Hailuo AI</strong>.</li>
+        <li><span class="tag">Corporate comms &amp; training</span> Deploy <strong>HeyGen</strong> or <strong>Synthesia</strong> for multilingual talking heads.</li>
+        <li><span class="tag">Portrait‑driven pipelines</span> Leverage <strong>Seedream</strong> for nuanced character assets, then assemble in your NLE/CapCut.</li>
+        <li><span class="tag">R&amp;D / Experimental</span> Explore <strong>“Nano‑Banana”</strong> for tests—not yet recommended for production SLAs.</li>
+      </ul>
+    </section>
+
+    <section id="limitations">
+      <h2>Limitations</h2>
+      <ul>
+        <li><strong>Rapid change:</strong> Model access, pricing, and features evolve quickly (especially Sora &amp; Veo).</li>
+        <li><strong>Anecdotal inputs:</strong> Community reviews reflect individual experiences; enterprise outcomes may vary.</li>
+        <li><strong>Model scope:</strong> Seedream is primarily an image model used within video workflows.</li>
+      </ul>
+    </section>
+
+    <section id="references">
+      <h2>Sources &amp; References (Selected)</h2>
+      <p class="muted">This paper synthesizes recent (2024–2025) vendor docs, press coverage, and user reviews. Examples include:</p>
+      <ul>
+        <li>Official product pages &amp; docs: Runway Gen‑4, OpenAI Sora, Google Veo (Vertex/Gemini), HeyGen, Synthesia, Hailuo AI, Seedream.</li>
+        <li>Tech press and hands‑on reviews (Summer 2025).</li>
+        <li>Community feedback on Reddit, YouTube creator reviews, and software review platforms (G2/Capterra).</li>
+      </ul>
+      <p class="muted">For a live, link‑rich bibliography, ask for the web‑linked version.</p>
+    </section>
+
+    <footer>
+      <p>&copy; 2025. Prepared for internal evaluation and vendor selection. This document is informational and not investment advice.</p>
+    </footer>
+  </div>
+</body>
+</html>
