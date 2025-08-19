@@ -4,6 +4,7 @@
 [![Live Platform](https://img.shields.io/badge/Live%20Platform-Orb%20Game-green?style=for-the-badge&logo=robot)](https://orbgame.us)
 [![Documentation](https://img.shields.io/badge/Documentation-Wiki%20Orb%20Game-orange?style=for-the-badge&logo=book)](https://wiki.orbgame.us)
 [![API](https://img.shields.io/badge/API-Orb%20Game%20API-purple?style=for-the-badge&logo=api)](https://api.orbgame.us)
+[![Research](https://img.shields.io/badge/Research-AI%20Insights-red?style=for-the-badge&logo=search)](https://zimax.net/research/)
 [![Status](https://img.shields.io/badge/Status-Production%20Ready-success?style=for-the-badge)](https://orbgame.us)
 
 ---
@@ -101,12 +102,85 @@
 - **Documentation**: [https://wiki.orbgame.us](https://wiki.orbgame.us)
 - **GitHub Repository**: [https://github.com/zimaxnet/orb-game](https://github.com/zimaxnet/orb-game)
 
-### **Technology Stack**
-- **Frontend**: React 19.x, Three.js, Vite
-- **Backend**: Node.js, Express, Azure OpenAI
-- **Database**: Azure Cosmos DB for MongoDB
-- **Deployment**: Azure Web App, Container Apps, GitHub Actions
-- **AI Models**: o4-mini, grok-4, perplexity-sonar, gemini-1.5-flash
+---
+
+## 📚 Research & Insights
+
+### **🔬 AI Technology Research & Analysis**
+Zimax Networks provides expert research and comprehensive analysis of AI technologies, tools, and industry trends. Our research demonstrates deep expertise in AI technology evaluation and practical applications.
+
+#### **📊 Featured Research Papers**
+- **[Comparative Research Paper on 2025 AI Video Tools](https://zimax.net/research/ai-video-tools-2025-research.html)**
+  - **9 AI Video Generation Systems**: Runway Gen-4, Kling, OpenAI Sora, HeyGen, Synthesia, Seedream, Hailuo AI, "Nano-Banana", and Google Veo
+  - **Comprehensive Analysis**: Realism & motion, complex scene composition, talking-head at scale, style & aesthetics
+  - **Practical Recommendations**: Actionable insights for different use cases and requirements
+  - **Methodology**: Primary sources, secondary analysis, community feedback, and hands-on testing
+
+- **[AI Video Tools 2025 — Live Bibliography](https://zimax.net/research/ai-video-tools-bibliography.html)**
+  - **100+ Curated Resources**: Official documentation, tech press reviews, community feedback
+  - **Real-time Updates**: Continuously updated with latest developments and user experiences
+  - **Enterprise Focus**: Business software reviews and implementation case studies
+  - **Research Sources**: Comprehensive collection for AI technology evaluation
+
+#### **🎯 Research Methodology**
+- **Primary Sources**: Official product pages, technical blogs, and comprehensive documentation
+- **Secondary Analysis**: Tech press hands-on articles, developer posts, and expert reviews
+- **Community Feedback**: User experiences from forums and business software review sites
+- **Practical Testing**: Hands-on evaluation of tools and technologies
+
+#### **💼 Custom Research Services**
+- **Vendor Evaluation**: Comprehensive analysis of AI technology vendors and solutions
+- **Implementation Strategies**: Practical guidance for AI technology adoption
+- **Technology Trends**: Industry insights and future predictions
+- **Enterprise Consulting**: Tailored research for specific business needs
+
+**Access Research**: [https://zimax.net/research/](https://zimax.net/research/)
+
+---
+
+## 🛠 Technology Stack
+
+### **Frontend Technologies**
+- **React 19.x**: Modern React with latest features and optimizations
+- **Three.js**: 3D graphics and interactive visualizations
+- **Vite**: Fast build tool and development server
+- **CSS3**: Advanced styling with animations and responsive design
+
+### **Backend Infrastructure**
+- **Node.js**: Server-side JavaScript runtime
+- **Express**: Web application framework
+- **Azure OpenAI**: AI model integration and content generation
+- **Azure Cosmos DB**: NoSQL database for MongoDB compatibility
+
+### **Deployment & DevOps**
+- **Azure Web App**: Scalable web hosting platform
+- **Azure Container Apps**: Containerized application deployment
+- **GitHub Actions**: Automated CI/CD pipeline
+- **Azure Front Door**: Global CDN and security layer
+
+### **AI Models & Services**
+- **o4-mini**: Advanced language model for content generation
+- **grok-4**: X.AI's latest language model
+- **perplexity-sonar**: Perplexity AI's advanced model
+- **gemini-1.5-flash**: Google's fast and efficient model
+
+### **Security & Performance**
+- **SSL Labs A Rating**: Enterprise-grade security configuration
+- **HSTS Preloading**: Enhanced security headers
+- **Azure Front Door**: DDoS protection and global acceleration
+- **Content Security Policy**: XSS and injection protection
+
+---
+
+## 🌐 Live Platforms
+
+### **Primary Platform**
+- **Orb Game**: [https://orbgame.us](https://orbgame.us)
+- **API Endpoint**: [https://api.orbgame.us](https://api.orbgame.us)
+- **Documentation**: [https://wiki.orbgame.us](https://wiki.orbgame.us)
+- **GitHub Repository**: [https://github.com/zimaxnet/orb-game](https://github.com/zimaxnet/orb-game)
+
+
 
 ---
 
@@ -154,14 +228,8 @@
 - **Orb Game**: [https://orbgame.us](https://orbgame.us)
 - **API Endpoint**: [https://api.orbgame.us](https://api.orbgame.us)
 - **Documentation**: [https://wiki.orbgame.us](https://wiki.orbgame.us)
+- **Research & Insights**: [https://zimax.net/research/](https://zimax.net/research/)
 - **GitHub Repository**: [https://github.com/zimaxnet/orb-game](https://github.com/zimaxnet/orb-game)
-
-### **🔧 Technology Stack**
-- **Frontend**: React 19.x, Three.js, Vite
-- **Backend**: Node.js, Express, Azure OpenAI
-- **Database**: Azure Cosmos DB for MongoDB
-- **Deployment**: Azure Web App, Container Apps, GitHub Actions
-- **AI Models**: o4-mini, grok-4, perplexity-sonar, gemini-1.5-flash
 
 ### **📧 Contact Details**
 - **Email**: [derek@zimax.net](mailto:derek@zimax.net)
@@ -181,6 +249,8 @@
 - ✅ **Complete Integration** (Frontend & Backend)
 - ✅ **Quality Validation** (All prompts tested and working)
 - ✅ **Performance Optimization** (Centralized management)
+- ✅ **AI Research Expertise** (Comprehensive technology analysis)
+- ✅ **Industry Thought Leadership** (Published research and insights)
 
 **Orb Game** is now **production-ready** and provides a **world-class educational experience** that makes learning about historical figures engaging, educational, and culturally appropriate for users worldwide.
 
@@ -203,12 +273,14 @@ In 2025, Zimax Networks underwent a comprehensive transformation to focus on **O
 - **149 Insertions**: New Orb Game-focused content
 - **138 Deletions**: Removed AIMCS references
 - **100% Coverage**: Every page now reflects Orb Game focus
+- **Research Section Added**: New AI technology research and analysis capabilities
 
 #### **🎯 Key Changes Made**
 - **Hero Section**: Revolutionary AI-powered educational technology messaging
 - **Product Pages**: Complete rewrite of main product pages
 - **Navigation**: Updated header, footer, and flyout navigation
 - **Documentation**: Integrated wiki.orbgame.us throughout the site
+- **Research Section**: Added comprehensive AI technology research and analysis
 - **Styling**: Updated CSS classes and JavaScript for new navigation structure
 
 ---
@@ -221,8 +293,15 @@ In 2025, Zimax Networks underwent a comprehensive transformation to focus on **O
 - **Developer Resources**: SDKs, libraries, and development tools
 - **Educational Materials**: Tutorials, case studies, and best practices
 
+### **Research & Analysis**
+- **AI Technology Research**: [zimax.net/research/](https://zimax.net/research/)
+- **Video Tools Analysis**: Comprehensive evaluation of 2025 AI video generation platforms
+- **Technology Trends**: Industry insights and future predictions
+- **Custom Research Services**: Tailored analysis for enterprise needs
+
 ### **Repository Structure**
 - **Website**: Corporate website showcasing Orb Game as flagship product
+- **Research**: AI technology research and analysis section
 - **Documentation**: Comprehensive technical and educational resources
 - **API**: RESTful API for Orb Game platform integration
 - **Deployment**: Azure infrastructure and CI/CD automation
